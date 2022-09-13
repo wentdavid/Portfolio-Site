@@ -1,0 +1,601 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+/*
+Colors used
+
+Text Color (Black): #000000;
+Primary Color (Dark Gray): #808080;
+Secondary Color (Light Gray): #A0A0A0;
+ */
+
+ %button-shared{
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #000000;
+    opacity: 60%;
+    color: #ffffff;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 20px;
+    border-radius: 30px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+}
+
+a {
+  color: #357b70;
+}
+
+body{background-color: white;}
+body{font-family: 'Roboto', sans-serif ;
+font-weight: 100;
+font-size: 16px;
+line-height: 1.6;}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  a {
+    color: #000000 ;
+  }
+
+
+  a:visited {
+    /* visited link */
+    color: #051c6e;
+  }
+
+  a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  
+  a:active {
+    /* selected link */
+    color: #A0A0A0;
+  }
+
+  .button {
+  @extend %button-shared;
+   
+  }
+
+  button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.4;
+  }
+
+
+
+  .navigation-list__item--active {
+    text-decoration: none;
+    
+  }
+
+  .navigation-list {
+    list-style-type: none;
+  }
+
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15 px;
+  }
+
+  .button__form {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #000000;
+    opacity: 60%;
+    color: #ffffff;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 20px;
+    border-radius: 30px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid #000000;
+  }
+
+  .button__form:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.4;
+  }
+
+  div {
+    padding: 10px; /* Adds a 10px inner spacing to all sides*/
+    margin: 10px; /* Adds a 10px outer spacing to all sides*/
+  }
+
+  .profile__container {
+    position:relative;
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+        grid-template-areas: "overlap";
+  }
+
+  .profile__portrait-circle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    width: 107%;
+    grid-area: overlap;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  
+    display: block;
+    margin: 0 0.5rem;
+    -webkit-animation: pulse;
+            animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s; /* don't forget to set a duration! */
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    }
+
+  .profile__portrait {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    width: 100%;
+    border-radius: 50%;
+    grid-area: overlap;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+   
+  }
+
+  
+
+  .profile__portrait-smallcircle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    width: 30%;
+    grid-area: overlap;
+    -ms-grid-row-align: bottom right;
+        align-self: bottom right;
+   
+  
+    display: inline-block;
+    margin: 0 0.5rem;
+    -webkit-animation: pulse;
+            animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s; /* don't forget to set a duration! */
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    }
+
+    .circlecontainer {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      width: 100%;
+      grid-area: overlap;
+      -ms-grid-row-align: bottom right;
+          align-self: bottom right;
+     
+    }
+
+    .profile__portrait-bigrectangle {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      width: 5%;
+      grid-area: overlap;
+      -ms-grid-row-align: bottom right;
+          align-self: bottom right;
+    
+     
+      -webkit-animation-delay: 0;
+    
+     
+              animation-delay: 0;
+      -webkit-animation: heartBeat;
+              animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+      -webkit-animation-duration: 5s;
+              animation-duration: 5s; /* don't forget to set a duration! */
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      }
+
+      .profile__portrait-mediumrectangle {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        width: 5%;
+        grid-area: overlap;
+        -ms-grid-row-align: bottom right;
+            align-self: bottom right;
+
+        
+        -webkit-animation-delay: 5ms;
+
+        
+                animation-delay: 5ms;
+        -webkit-animation: heartBeat;
+                animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+        -webkit-animation-duration: 5s;
+                animation-duration: 5s; /* don't forget to set a duration! */
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        }
+
+        .profile__portrait-smallrectangle {
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
+          width: 5%;
+          grid-area: overlap;
+          -ms-grid-row-align: bottom right;
+              align-self: bottom right;
+        
+          
+          -webkit-animation-delay: 1s;
+        
+          
+                  animation-delay: 1s;
+          -webkit-animation: heartBeat;
+                  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+          -webkit-animation-duration: 5s;
+                  animation-duration: 5s; /* don't forget to set a duration! */
+          -webkit-animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+          }
+    
+  .introtext {
+    display: block;
+  }
+   
+    
+
+    
+   
+   
+
+  
+
+
+
+  .page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;  
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+.center {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    margin: auto
+  }
+
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40px;
+            flex: 0 1 40px;
+  }
+
+  .page-header__item:hover {
+        cursor: pointer;
+        opacity: 0.4;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+  }
+
+  .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align:right;
+  }
+/* start grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+ }
+ /* end grid fallback */
+ 
+ @supports (display: grid) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+ 
+  }
+  .grid__item {
+    background-color: #A0A0A0;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+  .grid__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+ }
+
+ .button, button {
+  @extend %button-shared;
+  display: inline-block;
+  padding: 10px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.button:hover,
+.button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.4;
+}
+
+.animate__animated {
+
+  display: inline-block;
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s; /* don't forget to set a duration! */
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-name: color-change;
+          animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(500px, 50px);
+            transform: translate(500px, 50px);
+  }
+}
+
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(500px, 50px);
+            transform: translate(500px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-name: cloud-move;
+          animation-name: cloud-move;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation: 40s cloud-move-reverse infinite alternate linear;
+          animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+
+div.container
+{
+
+  margin: 0 auto;
+
+
+}
+
+div.container a
+{
+    color: #000000;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* Top border go down and Left border appears */
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1px;
+    height: 0px;
+    background: #000000;
+    content: "";
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #000000;
+    content: "";
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
+}
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+
+
+/*has to be at the end of the file*/
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+} 
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
