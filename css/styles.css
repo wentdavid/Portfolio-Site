@@ -192,7 +192,7 @@ h1 {
     backdrop-filter: blur(10px);
     }
 
-    .circlecontainer: {
+    .circlecontainer {
       width: 100%;
       grid-area: overlap;
       align-self: bottom right;
