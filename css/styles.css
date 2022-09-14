@@ -104,7 +104,7 @@ h1 {
 
   .navigation-list li {
     display: inline-block;
-    margin-left: 15 px;
+    margin-left: 15px;
   }
 
   .button__form {
@@ -177,7 +177,7 @@ h1 {
   .profile__portrait-smallcircle {
     width: 30%;
     grid-area: overlap;
-    align-self: bottom right;
+    
    
    
   
@@ -195,17 +195,16 @@ h1 {
     .circlecontainer {
       width: 100%;
       grid-area: overlap;
-      align-self: bottom right;
+      
     }
 
     .profile__portrait-bigrectangle {
       width: 5%;
       grid-area: overlap;
-      align-self: bottom right;
+      
     
       display: inline-block;
       margin: 0 0.5rem;
-      animation-delay: 0;
       animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 6s; /* don't forget to set a duration! */
       animation-iteration-count: 1;
@@ -217,7 +216,7 @@ h1 {
       .profile__portrait-mediumrectangle {
         width: 4%;
         grid-area: overlap;
-        align-self: bottom right;
+        
 
         display: inline-block;
         margin: 0 0.5rem;
@@ -233,7 +232,7 @@ h1 {
         .profile__portrait-smallrectangle {
           width: 4%;
           grid-area: overlap;
-          align-self: bottom right;
+        
         
           display: inline-block;
           margin: 0 0.5rem;
@@ -250,7 +249,7 @@ h1 {
           cursor: pointer;
           display: inline-block;
           margin: 0 0.5rem;
-          animation-delay: 0;
+        
           animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
           animation-duration: 4s; /* don't forget to set a duration! */
           animation-iteration-count: infinite;
@@ -261,7 +260,7 @@ h1 {
             cursor: pointer;
             display: inline-block;
             margin: 0 0.5rem;
-            animation-delay: 0;
+            
             animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
             animation-duration: 4s; /* don't forget to set a duration! */
             animation-iteration-count: infinite;
@@ -272,7 +271,7 @@ h1 {
               cursor: pointer;
               display: inline-block;
               margin: 0 0.5rem;
-              animation-delay: 0;
+             
               animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
               animation-duration: 4s; /* don't forget to set a duration! */
               animation-iteration-count: infinite;
@@ -651,3 +650,4 @@ h1 {
   h1 {
     font-size: 22px;
   }
+}
