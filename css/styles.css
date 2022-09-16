@@ -43,7 +43,6 @@ h1 {
   h3 {
     font-size: 16px;
     font-weight: 400;
-    text-decoration: none;
     color: #000000 ;
   }
 
@@ -189,7 +188,6 @@ h1 {
     position: absolute;
     bottom: 0;
     right: 0;
-    backdrop-filter: blur(10px);
     }
 
     .circlecontainer {
@@ -342,7 +340,7 @@ h1 {
 
 .latestprojectsheader {
   margin: 10px;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: left;
   
 }
@@ -468,7 +466,6 @@ h1 {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  backdrop-filter: blur(10px);
   
   
 }
