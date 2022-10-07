@@ -1,7 +1,6 @@
 (function() {
-    let form = document.querySelector('#register-form');
-    let emailInput = document.querySelector('#email');
-    let passwordInput = document.querySelector('#password');
+    let emailInput = document.querySelector('#contact_email');
+    let phoneInput = document.querySelector('#contact_telephone');
   
   function showErrorMessage(input, message) {
     let container = input.parentElement; // The .input-wrapper
@@ -46,21 +45,21 @@
     }
    
     
-    function validatePassword() {
-      let value = passwordInput.value;
+    function validatePhone() {
+      let value = contact_telephone.value;
   
       if (!value) { // if value is NOT true
      // execute the following code
-      showErrorMessage(passwordInput, 'Password is a required field.');
+      showErrorMessage(contact_telephone, 'Password is a required field.');
       return false;
     }
   
-  if (value.length < 8) {
-      showErrorMessage(passwordInput, 'The password needs to be at least 8 characters long.');
+  if (value.length < 5) {
+      showErrorMessage(contact_telephone, 'Please enter a valid phone number.');
       return false;
     }
   
-  showErrorMessage(passwordInput, null);
+  showErrorMessage(contact_telephone, null);
     return true;
   }
   
@@ -68,8 +67,8 @@
     //By declaring variables (isValidEmail, isValidPassword), and storing what’s returned from both validateEmail() and validatePassword() in the variables, you can ensure any errors that are stored in the declared variables are both returned by validateForm, because the && operator will only check from left to right for the existence of the variables.
     function validateForm() {
       let isValidEmail = validateEmail();
-      let isValidPassword = validatePassword();
-      return isValidEmail && isValidPassword;
+      let isValidcontact_telephone = validatePhone();
+      return isValidEmail && isValidcontact_telephone;
     }
     
     form.addEventListener('submit', (e) => {
@@ -81,7 +80,7 @@
   
     //validate the fields once the user starts typing in them.
   emailInput.addEventListener('input', validateEmail);
-  passwordInput.addEventListener('input', validatePassword);
+  contact_telephoneInput.addEventListener('input', validateContact_telephone);
     // THE RETURN STATEMENT HERE
   })();
   
