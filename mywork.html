@@ -1,152 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-                <meta charset="utf-8">
-                <title>David Went - Portfolio</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <link rel="preconnect" href="https://fonts.googleapis.com"> 
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-                    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
-                
-                    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
-               
-                    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-                <link rel="stylesheet" type="text/css" href="css/style.production.css">
+<head>
+    <meta charset="utf-8">
+    <title>David Went - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
-           
-    <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-        <header class="page-header">
-            <img src="./img/logo.svg" alt="logo" class="page-header__item">
-            <nav class="main-navigation page-header__item">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 
-                <!--Add logo here -->
-                <div class="container topLeftBorders">
-                    <ul role="menubar" class="navigation-list"> 
-                        <li role="presentation">
-                            
-                            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                            
-                        </li>    
-                        <li role="presentation">
-                            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                        </li>
-                        <li role="presentation">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="page-header">
+        <a class="page-header__item" href="/index.html">
+            <img src="./img/logo.svg" alt="logo" class="logo">
+        </a>
+        <nav class="main-navigation page-header__item">
+
+            <!--Add logo here -->
+            <div class="container topLeftBorders">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+
+                        <a href="index.html" role="menuitem"
+                            class="navigation-list__item navigation-list__item">Home</a>
+
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                    </li>
+                    <!-- <li role="presentation">
                             <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                        </li>
-                        <li role="presentation">
+                        </li> -->
+                    <!-- <li role="presentation">
                             <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="mywork.html" role="menuitem" class="navigation-list__item">My Work</a>
-                        </li>
-                    </ul>  
-                </div>    
-                </nav>  
-
-        </header>  
-
-        <!-- Main content -->
-    
-            <h1 class="CollectionMyWork">My Work</h1>
-    
-            <div class="collection">
-                <div class="collection__item">
-                    <a href="./projects/angular_movie_library.html">
-                        <img class="collection__photo" src="../img/latest_projects/Angular Movie library.svg"
-                            alt="Angular Movie library">
-                        <h5 class="collection__itemtext">Angular Movie library</h5>
-                    </a>
-                    <p class="collection__itemtext">This project is an Angular-based client-side application for the movie API. It provides users with the ability to browse
-                    movies, get information about their favorite movies, and manage their profiles.</p>
-                </div>
-            
-            
-                <div class="collection__item">
-                    <a href="./projects/react_native_chat.html">
-                        <img class="collection__photo" src="../img/latest_projects/react_native_chat.svg" alt="React Native Chat">
-                        <h5 class="collection__itemtext">React Native Chat</h5>
-                    </a>
-                    <p class="collection__itemtext">This is a mobile chat app built with React Native and Firebase. It allows users to sign in with their name, choose a
-                    background color, and chat with other users in real-time. The app also has features for sending images and locations,
-                    and it works offline with local storage.</p>
-                </div>
-            
-            
-                <div class="collection__item">
-                    <a href="./projects/react_calendar_meet_app.html">
-                        <img class="collection__photo" src="../img/latest_projects/React_calendar_meet_app.svg"
-                            alt="React Calendar Meet App">
-                        <h5 class="collection__itemtext">React Calendar Meet App</h5>
-                    </a>
-                    <p class="collection__itemtext">Meet is a responsive web application that displays upcoming events for developers all around the world. The application
-                    fetches the event data from a Google calendar API and displays the information to the user in a user-friendly way.</p>
-                </div>
-            
-            
-                <div class="collection__item">
-                    <a href="./projects/react_movie_library.html">
-                        <img class="collection__photo" src="../img/latest_projects/React_Movie_Library.svg"
-                            alt="React Movie Library">
-                        <h5 class="collection__itemtext">React Movie Library</h5>
-                    </a>
-                    <p class="collection__itemtext">This is a movie app that allows users to view information about movies and add them to their favorites list. The app is
-                    built using React and Bootstrap, and the data is provided by a REST API.</p>
-                </div>
-            
-            
-                <div class="collection__item">
-                    <a href="./projects/movie_api.html">
-                        <img class="collection__photo" src="../img/latest_projects/movie_api.svg" alt="Movie API">
-                        <h5 class="collection__itemtext">Movie API</h5>
-                    </a>
-                    <p class="collection__itemtext">This is a RESTful API for movies. It is built using Node.js, Express, and MongoDB, and it is designed to provide users
-                    with access to information about movies, including titles, descriptions, genres, directors, actors, and images.</p>
-                </div>
-            
-            
-                <div class="collection__item">
-                    <a href="./projects/javascript_todo_list.html">
-                        <img class="collection__photo" src="../img/latest_projects/JavaScript ToDo List.svg"
-                            alt="JavaScript ToDo List">
-                        <h5 class="collection__itemtext">JavaScript ToDo List</h5>
-                    </a>
-                    <p class="collection__itemtext">This is a simple to-do list application that allows users to add, delete and reorder items on the list.</p>
-                </div>
-            
-            
-                <div class="collection__item">
-                    <a href="./projects/javascript_pokemon_library.html">
-                        <img class="collection__photo" src="../img/latest_projects/JavaScript Pokémon Library.svg"
-                            alt="JavaScript Pokémon Library">
-                        <h5 class="collection__itemtext">JavaScript Pokémon Library</h5>
-                    </a>
-                    <p class="collection__itemtext">This PokéPedia App lists information about Pokémons loaded from an external API. This small web app is built with HTML,
-                    CSS and JS and useses Bootstrap.</p>
-                </div>
-            
+                        </li> -->
+                    <li role="presentation">
+                        <a href="mywork.html" role="menuitem" class="navigation-list__item--active">My Work</a>
+                    </li>
+                </ul>
             </div>
-      
+        </nav>
 
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <!--Github Icon--> 
-                <img src="img/github_icon.svg" alt="Github">
-                <!--Instagram Icon-->
-                <img src="img/instagram_icon.svg" alt="Instagram">
-                <!--LinkedIn Icon-->
-                <img src="img/linkedin_icon.svg" alt="LinkedIn">
-                <!--Spotify Icon-->
-                <img src="img/spotify_icon.svg" alt="Spotify">
-            </div>    
-        </footer>
+    </header>
 
-        <script src="js/tota11y.min.js"></script>
-    </body>
-    <!--Contact Me--> 
-    <img class="contactme" src="img/Contactme-button.png" alt="Contact Me">
+    <!-- Main content -->
+    <div class="homeAlign">
+        <h1 class="CollectionMyWork">My Work</h1>
+
+        <div class="collection">
+            <div class="collection__item">
+                <a href="./projects/angular_movie_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/Angular Movie library.svg"
+                        alt="Angular Movie library">
+                    <h5 class="collection__itemtext">Angular Movie library</h5>
+                </a>
+                <p class="collection__itemtext">This project is an Angular-based client-side application for the movie
+                    API. It provides users with the ability to browse
+                    movies, get information about their favorite movies, and manage their profiles.</p>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./projects/react_native_chat.html">
+                    <img class="collection__photo" src="../img/latest_projects/react_native_chat.svg"
+                        alt="React Native Chat">
+                    <h5 class="collection__itemtext">React Native Chat</h5>
+                </a>
+                <p class="collection__itemtext">This is a mobile chat app built with React Native and Firebase. It
+                    allows users to sign in with their name, choose a
+                    background color, and chat with other users in real-time. The app also has features for sending
+                    images and locations,
+                    and it works offline with local storage.</p>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./projects/react_calendar_meet_app.html">
+                    <img class="collection__photo" src="../img/latest_projects/React_calendar_meet_app.svg"
+                        alt="React Calendar Meet App">
+                    <h5 class="collection__itemtext">React Calendar Meet App</h5>
+                </a>
+                <p class="collection__itemtext">Meet is a responsive web application that displays upcoming events for
+                    developers all around the world. The application
+                    fetches the event data from a Google calendar API and displays the information to the user in a
+                    user-friendly way.</p>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./projects/react_movie_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/React_Movie_Library.svg"
+                        alt="React Movie Library">
+                    <h5 class="collection__itemtext">React Movie Library</h5>
+                </a>
+                <p class="collection__itemtext">This is a movie app that allows users to view information about movies
+                    and add them to their favorites list. The app is
+                    built using React and Bootstrap, and the data is provided by a REST API.</p>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./projects/movie_api.html">
+                    <img class="collection__photo" src="../img/latest_projects/movie_api.svg" alt="Movie API">
+                    <h5 class="collection__itemtext">Movie API</h5>
+                </a>
+                <p class="collection__itemtext">This is a RESTful API for movies. It is built using Node.js, Express,
+                    and MongoDB, and it is designed to provide users
+                    with access to information about movies, including titles, descriptions, genres, directors, actors,
+                    and images.</p>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./projects/javascript_todo_list.html">
+                    <img class="collection__photo" src="../img/latest_projects/JavaScript ToDo List.svg"
+                        alt="JavaScript ToDo List">
+                    <h5 class="collection__itemtext">JavaScript ToDo List</h5>
+                </a>
+                <p class="collection__itemtext">This is a simple to-do list application that allows users to add, delete
+                    and reorder items on the list.</p>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./projects/javascript_pokemon_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/JavaScript Pokémon Library.svg"
+                        alt="JavaScript Pokémon Library">
+                    <h5 class="collection__itemtext">JavaScript Pokémon Library</h5>
+                </a>
+                <p class="collection__itemtext">This PokéPedia App lists information about Pokémons loaded from an
+                    external API. This small web app is built with HTML,
+                    CSS and JS and useses Bootstrap.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <!--Github Icon-->
+            <img src="img/github_icon.svg" alt="Github">
+            <!--Instagram Icon-->
+            <img src="img/instagram_icon.svg" alt="Instagram">
+            <!--LinkedIn Icon-->
+            <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            <!--Spotify Icon-->
+            <img src="img/spotify_icon.svg" alt="Spotify">
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+<!--Contact Me-->
+<a href="mailto:davidwent@me.com">
+    <div class="contactme" alt="Contact Me">
+        <h3 class="contactmeheader">Contact Me</h3>
+        <img class="email" src="img/email.svg">
+    </div>
+</a>
 <footer></footer>
+
 </html>
