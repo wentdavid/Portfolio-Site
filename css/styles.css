@@ -135,7 +135,8 @@ h1 {
   
 
   .homeAlign {
-    margin-left: 25%;
+   margin-top: 5%;
+    margin-left: 10%;
   }
 
 
@@ -283,15 +284,31 @@ h1 {
   .introtext {
     display: block;
   }
-   
+ .about-text {
+    display: block;
+    margin: 10%;
+  }
+
+    .about-picture {
+      display: block;
+      margin: 5%;
+    }
+
+  .contact-container {
+   margin-top: 40px;
+   margin-left: -10%;
+   padding-left: 10%;
+   overflow-x: scroll;
+ }
+
   .contact {
     margin: 5px;
     max-width: none;
     max-height: fit-content;
-    margin-top: 40px;
+    
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+   
    
   }
 
@@ -301,16 +318,34 @@ h1 {
     align-self: center;
   }
 
+    .contact__project {
+      line-height: 0;
+      margin: -6px;
+      margin-right: 18px;
+      align-self: center;
+    }
+
+ .socials-container {
+   margin-left: -10%;
+   padding-left: 10%;
+   overflow-x: scroll;
+  }
+
    .socials {
     margin: 5px;
     max-width: none;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
     padding-bottom: 15px;
   }
 
- 
+
+
+.MyWork-container {
+    margin-left: -10%;
+    padding-left: 10%;
+    overflow-x: scroll;
+  }
 
 
   .MyWork {
@@ -320,7 +355,6 @@ h1 {
     margin: auto;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
   }
 
   .MyWork__item {
@@ -331,14 +365,17 @@ h1 {
   }
 
   
+.latest-projects-container {
+  margin-left: -10%;
+  padding-left: 10%;
+  overflow-x: scroll;
+}
 
 .LatestProjects {
-  
   text-decoration: none;
   max-width: none;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
   margin-bottom: 50px;
 }
 
@@ -364,8 +401,22 @@ h1 {
   margin: 10px;
   max-width: 260px;
   
- 
+}
 
+.latestprojectsbutton {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.latestprojectsbutton:hover {
+  text-shadow: #000000;
 }
 
 .Recommended {
@@ -420,7 +471,7 @@ h1 {
 }
 
 .collection__item {
-  max-width: 170px;
+  max-width: 270px;
   margin: 10px;
  }
 
@@ -461,7 +512,7 @@ h1 {
 }
 
 .project__item {
-  margin: 10px;
+  margin: 5%;
 }
 
 
@@ -471,8 +522,30 @@ h1 {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  
-  
+  width: 168px;
+  height: 70px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.contactmeheader {
+  position: absolute;
+  margin-left: 20px;
+  top: 13%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email {
+position: absolute;
+  left: 70%;
+  top: 32%;
+
 }
   .page-footer {
     clear: both;
@@ -521,6 +594,13 @@ h1 {
     flex-grow: 1;
     text-align:right;
   }
+
+  .logo{
+    position: relative;
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10%;
+  }
 /* start grid fallback */
 .grid__item {
   display: inline-block;
@@ -528,6 +608,13 @@ h1 {
  }
  /* end grid fallback */
  
+ @supports (backdrop-filter: none) {
+   .contactme {
+     background: rgba(0, 0, 0, 0.6);
+     backdrop-filter: blur(8px);
+   }
+ }
+
  @supports (display: grid) {
   .grid {
     display: grid;
