@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>David Went - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="backtoprojects">
+        <a style="color: white; margin: 10px; font-weight: 400; " href="../mywork.html">
+            < Back to Projects</a>
+    </div>
+
+
+    <img class="project__photo" src="../img/project_images/react_movie_library.png" alt="React Movie library">
+    <div class="project__item">
+        <h2>React Movie library</h2>
+
+        <div class="contact">
+            <div class="contact__item">
+                <a href="https://github.com/wentdavid/myFlix-client">
+
+                    <img src="../img/icons/view_on_github.svg" alt="View on Github">
+                </a>
+            </div>
+
+
+            <div class="contact__item">
+                <a href="https://gleans-moviedb.netlify.app/">
+
+                    <img src="../img/icons/View_live_project.svg" alt="View live project">
+                </a>
+            </div>
+
+        </div>
+
+        <div>
+            <p>This is a movie app that allows users to view information about movies and add them to their favorites list. The app
+                is built using React and Bootstrap, and the data is provided by a REST API. Feel free to test it <a
+                    href="https://gleans-moviedb.netlify.app/">here</a>.</p>
+            
+            <img width="800" alt="mainview"
+                src="https://user-images.githubusercontent.com/112701190/224073189-6af3eaca-cdd0-48f5-a4dd-8c4c287f468c.png">
+            
+            
+            <h2 id="setup">Setup</h2>
+            <p>To run the app, clone the repository and run <code>npm install</code> to install the dependencies. Then, run
+                <code>npm start</code> to start the app in development mode.</p>
+            <h2>Technologies</h2>
+            <p>This app is built with:</p>
+            <ul>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>React Bootstrap</li>
+                <li>React Router</li>
+                <li>Netlify</li>
+                <li>Heroku</li>
+            </ul>
+            <h2 id="features">Features</h2>
+            <ul>
+                <li>User can log in to the application using their username and password.</li>
+                <li>User can view a list of movies and movie details.</li>
+                <li>User can add movies to their list of favorites.</li>
+                <li>User can filter movies by genre and search for movies by title, genre, and director.</li>
+                <li>User can view their profile page and update their information.</li>
+            </ul>
+            <h2 id="components">Components</h2>
+            <p>This application is composed of several React components that work together to provide the functionality described
+                above. The main components are:</p>
+            <ul>
+                <li><strong>MainView</strong>: The MainView component is the main entry point of the application. It is responsible
+                    for fetching the list of movies from the API and rendering the navigation bar, search and filter inputs, and the
+                    list of movie cards. It also handles user authentication and routing to other components.</li>
+                <li><strong>MovieCard</strong>: The MovieCard component is responsible for rendering a single movie card with a
+                    thumbnail image, title, and release year. It also displays buttons to view the movie details and add/remove it
+                    from the user's list of favorites.</li>
+                <li><strong>MovieView</strong>: The MovieView component displays the details of a single movie, including the poster
+                    image, title, description, genre, director, and list of actors. It also allows the user to add/remove the movie
+                    from their list of favorites.</li>
+                <li><strong>LoginView</strong>: The LoginView component displays a form for the user to log in to the application
+                    using their username and password. It sends a request to the API to authenticate the user and store their
+                    authentication token in local storage.</li>
+                <li><strong>SignupView</strong>: The SignupView component displays a form for the user to create a new account with
+                    a username, password, email address, and birthdate. It sends a request to the API to create the new user and
+                    store their authentication token in local storage.</li>
+                <li><strong>ProfileView</strong>: The ProfileView component displays the user's profile information, including their
+                    username, email address, and birthdate. It allows the user to update their information and change their
+                    password.</li>
+            
+            </ul>
+            <h2>Deployment</h2>
+            <p>This app is deployed using Netlify for the front-end and Heroku for the back-end. The front-end code is automatically
+                deployed to Netlify when changes are pushed to the main branch on GitHub. The back-end code is deployed to Heroku
+                manually using the Heroku CLI.</p>
+            <h2 id="license">License</h2>
+            <p>This project is licensed under the MIT License.</p>
+
+        </div>
+
+        <div class="collection">
+            <div class="collection__item">
+                <a href="./angular_movie_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/Angular Movie library.svg"
+                        alt="Angular Movie library">
+                    <h5 class="collection__itemtext">Angular Movie library</h5>
+                </a>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./react_native_chat.html">
+                    <img class="collection__photo" src="../img/latest_projects/react_native_chat.svg"
+                        alt="React Native Chat">
+                    <h5 class="collection__itemtext">React Native Chat</h5>
+                </a>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./react_calendar_meet_app.html">
+                    <img class="collection__photo" src="../img/latest_projects/React_calendar_meet_app.svg"
+                        alt="React Calendar Meet App">
+                    <h5 class="collection__itemtext">React Calendar Meet App</h5>
+                </a>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./react_movie_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/React_Movie_Library.svg"
+                        alt="React Movie Library">
+                    <h5 class="collection__itemtext">React Movie Library</h5>
+                </a>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./movie_api.html">
+                    <img class="collection__photo" src="../img/latest_projects/movie_api.svg" alt="Movie API">
+                    <h5 class="collection__itemtext">Movie API</h5>
+                </a>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./javascript_todo_list.html">
+                    <img class="collection__photo" src="../img/latest_projects/JavaScript ToDo List.svg"
+                        alt="JavaScript ToDo List">
+                    <h5 class="collection__itemtext">JavaScript ToDo List</h5>
+                </a>
+            </div>
+
+
+            <div class="collection__item">
+                <a href="./javascript_pokemon_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/JavaScript Pokémon Library.svg"
+                        alt="JavaScript Pokémon Library">
+                    <h5 class="collection__itemtext">JavaScript Pokémon Library</h5>
+                </a>
+            </div>
+
+        </div>
+
+
+        <img class="contactme" src="../img/Contactme-button.png" alt="Contact Me">
+
+        <footer class="page-footer">
+
+
+
+
+        </footer>
+
+        <script src="../js/tota11y.min.js"></script>
+</body>
+
+</html>
