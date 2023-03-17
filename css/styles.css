@@ -92,8 +92,15 @@ h1 {
     opacity: 0.4;
   }
 
-
-
+code {
+  background-color: #e5edf4;
+  border-radius: 6px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.9em;
+  padding: 2px 5px;
+  color: #24292e;
+}
+ 
   .navigation-list__item--active {
     text-decoration: none;
     
@@ -136,7 +143,7 @@ h1 {
 
   .homeAlign {
    margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 9%;
   }
 
 
@@ -181,10 +188,7 @@ h1 {
   .profile__portrait-smallcircle {
     width: 30%;
     grid-area: overlap;
-    
-   
-   
-  
+
     display: inline-block;
     margin: 0 0.5rem;
     animation: pulse; /* referring directly to the animation's @keyframe declaration */
@@ -193,6 +197,27 @@ h1 {
     position: absolute;
     bottom: 0;
     right: 0;
+    }
+
+    .profile__portrait-smallcircle-container {
+      border-radius: 30px;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+      width: 30px;
+      height: 30px;
+        grid-area: overlap;
+        display: inline-block;
+        margin-right: 13px;
+        margin-bottom: 5px;
+        animation: pulse;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 5s;
+        /* don't forget to set a duration! */
+        animation-iteration-count: infinite;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      
     }
 
     .circlecontainer {
@@ -308,15 +333,23 @@ h1 {
     
     display: flex;
     flex-direction: row;
-   
-   
   }
 
   .contact__item {
     line-height: 0;
     margin: 5px;
     align-self: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
+    transition: all .2s ease-in-out;
+    
   }
+
+    .contact__item:hover {
+      cursor: pointer;
+      transform: scale(1.07);
+      
+    }
 
     .contact__project {
       line-height: 0;
@@ -364,11 +397,15 @@ h1 {
     
   }
 
+.animate__animated .animate__backInLeft {
+  --animate-duration: 1s;
+}
   
 .latest-projects-container {
   margin-left: -10%;
   padding-left: 10%;
   overflow-x: scroll;
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
 }
 
 .LatestProjects {
@@ -377,19 +414,42 @@ h1 {
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
+  padding-top: 25px;
 }
 
 .latestprojectsheader {
   margin: 10px;
-  text-decoration: none !important;
   text-align: left;
-  
+}
+
+.LatestProjects__item a {
+  text-decoration: none;
 }
 
 .LatestProjects__item {
   margin: 10px;
   text-decoration: none;
+  transition: all .2s ease-in-out;
   
+}
+
+.LatestProjects__item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.LatestProjects__picture {
+  width: 262px;
+  height: 169px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
+  transition: all .2s ease-in-out;
+
+}
+
+.LatestProjects__picture:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .latestprojectstext {
@@ -456,7 +516,7 @@ h1 {
 
 .CollectionHeader {
   margin-left: 30px;
-  margin-bottom: -5px;
+  margin-bottom: -25px;
   font-size: 19px;
   font-weight: 500;
 
@@ -511,11 +571,27 @@ h1 {
   object-fit: cover;
 }
 
-.project__item {
-  margin: 5%;
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+   
+  }
+}
+
+.animated-image {
+  animation-name: FadeIn;
+  animation-duration: 2s;
 }
 
 
+.project__item {
+  margin: 5%;
+}
 
 
 .contactme {
