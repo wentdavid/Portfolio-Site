@@ -63,8 +63,10 @@
             <!--Add image here -->
             <div class="profile__container">
                 <img src="img/David_Went_profile.png" class="profile__portrait" alt="David Went Portrait">
-                <img src="img/profile_picture_smallcircle.png" class="profile__portrait-smallcircle"
-                    alt="David Went Portrait">
+                <!-- <img src="img/profile_picture_smallcircle.png" class="profile__portrait-smallcircle"
+                    alt="David Went Portrait"> -->
+                    <div class="profile__portrait-smallcircle-container"
+                    alt="David Went Portrait"> </div>
                 <img src="img/profile_circle.svg" class="profile__portrait-circle" alt="David Went Portrait">
                 <div class="circlecontainer">
                     <img src="img/profile_picture_smallcircle_bigrectangle.svg" class="profile__portrait-bigrectangle"
@@ -78,18 +80,19 @@
             </div>
             <h1 class="animate__animated">Hello World!</h1>
             <p class="introtext">
-                My name is David Went. I'm a <span>web</span> developer from Berlin.
+                My name is David Went. I'm a Full-Stack Developer  from Berlin.
             </p>
             <a class="introtext" href="./mywork.html">Check out some of my code</a>
         </div>
 
 
         <div class="contact-container">
+            <div class="animate__animated animate__slideInLeft">
             <div class="contact">
                 <div class="contact__item">
                     <a href="https://wa.me/491738661878">
                         <!--Whats App-->
-                        <img src="img/whatsapp_icon.svg" alt="Whats App">
+                        <img src="img/icons/WhatsApp.svg" alt="Whats App">
                     </a>
                 </div>
 
@@ -97,7 +100,7 @@
                 <div class="contact__item">
                     <a href="./assets/David Went.vcf">
                         <!--vCrad Icon-->
-                        <img src="img/vCard-icon.svg" alt="vCard">
+                        <img src="img/icons/vCard.svg" alt="vCard">
                     </a>
                 </div>
 
@@ -105,65 +108,72 @@
                 <div class="contact__item">
                     <a href="mailto:davidwent@me.com">
                         <!--Mail Icon-->
-                        <img src="img/Mail-icon.svg" alt="Mail">
+                        <img src="img/icons/Mail.svg" alt="Mail">
                     </a>
                 </div>
 
                 <div class="contact__item">
                     <a href="">
                         <!--Imprint Icon-->
-                        <img src="img/imprint-icon.svg" alt="Imprint">
+                        <img src="img/icons/imprint.svg" alt="Imprint">
                     </a>
                 </div>
+            </div>
             </div>
         </div>
 
 
         <div class="socials-container">
+            <div class="animate__animated animate__slideInLeft">
             <div class="socials">
                 <div class="contact__item">
                     <a href="https://www.linkedin.com/in/davidwent/">
                         <!--LinkedIn-->
-                        <img src="img/linkedin_icon.svg" alt="LinkedIn">
+                        <img src="img/icons/Linkedin.svg" alt="LinkedIn">
                     </a>
                 </div>
 
                 <div class="contact__item">
                     <a href="https://github.com/wentdavid">
                         <!--GitHub-->
-                        <img src="img/GitHub-icon.svg" alt="GitHub">
+                        <img src="img/icons/GitHub.svg" alt="GitHub">
                     </a>
                 </div>
 
                 <div class="contact__item">
                     <a href="https://medium.com/@wentdavid">
                         <!--Medium-->
-                        <img src="img/medium.svg" alt="medium">
+                        <img src="img/icons/medium.svg" alt="medium">
                     </a>
                 </div>
 
                 <div class="contact__item">
                     <a href="https://twitter.com/went_david">
                         <!--Twitter-->
-                        <img src="img/twitter.svg" alt="twitter">
+                        <img src="img/icons/twitter.svg" alt="twitter">
                     </a>
                 </div>
 
                 <div class="contact__item">
                     <a href="https://open.spotify.com/user/1127492478?si=680546440143478e">
                         <!--Spotify-->
-                        <img src="img/Spotify_icon.svg" alt="Spotify">
+                        <img src="img/icons/Spotify.svg" alt="Spotify">
                     </a>
                 </div>
 
                 <div class="contact__item">
                     <a href="https://www.instagram.com/went_david">
                         <!--Instagram Icon-->
-                        <img src="img/instagram_icon.svg" alt="Instagram">
+                        <img src="img/icons/Instagram.svg" alt="Instagram">
                     </a>
                 </div>
             </div>
         </div>
+    </div>
+    
+
+
+        
 
 
 
@@ -209,13 +219,14 @@
 
 
         <h2 class="CollectionHeader">Latest Projects</h2>
-        <div class="latest-projects-container">
+        <div class="latest-projects-container" >
+            <div class="animate__animated animate__slideInLeft">
             <div class="LatestProjects">
 
                 <div class="LatestProjects__item">
                     <a href="./projects/angular_movie_library.html">
                         <!--Portfolio Site-->
-                        <img src="img/latest_projects/Angular Movie library.svg" alt="Angular Movie library">
+                        <img class="LatestProjects__picture" src="img/latest_projects/Angular Movie library.svg" alt="Angular Movie library">
                         <h3 class="latestprojectsheader">Angular Movie library</h3>
                     </a>
                     <p class="latestprojectstext">This project is an Angular-based client-side application for the movie
@@ -231,7 +242,7 @@
                 <div class="LatestProjects__item">
                     <a href="./projects/react_native_chat.html">
                         <!--Backend-project1-->
-                        <img src="img/latest_projects/react_native_chat.svg" alt="React Native Chat">
+                        <img class="LatestProjects__picture" src="img/latest_projects/react_native_chat.svg" alt="React Native Chat">
                         <h3 class="latestprojectsheader">React Native Chat</h3>
                     </a>
                     <p class="latestprojectstext">This is a mobile chat app built with React Native and Firebase. It
@@ -246,7 +257,7 @@
                 <div class="LatestProjects__item">
                     <a href="./projects/react_calendar_meet_app.html">
                         <!--Backend-project2-->
-                        <img src="img/latest_projects/React_calendar_meet_app.svg" alt="React Calendar Meet app">
+                        <img class="LatestProjects__picture" src="img/latest_projects/React_calendar_meet_app.svg" alt="React Calendar Meet app">
                         <h3 class="latestprojectsheader">React Calendar Meet app</h3>
                     </a>
                     <p class="latestprojectstext">Meet is a responsive web application that displays upcoming events for
@@ -261,7 +272,7 @@
                 <div class="LatestProjects__item">
                     <a href="./projects/react_movie_library.html">
                         <!--Backend-project2-->
-                        <img src="img/latest_projects/react_movie_library.svg" alt="React Movie library">
+                        <img class="LatestProjects__picture" src="img/latest_projects/react_movie_library.svg" alt="React Movie library">
                         <h3 class="latestprojectsheader">React Movie library</h3>
                     </a>
                     <p class="latestprojectstext">This is a movie app that allows users to view information about movies
@@ -275,7 +286,7 @@
                 <div class="LatestProjects__item">
                     <a href="./projects/movie_api.html">
                         <!--Backend-project2-->
-                        <img src="img/latest_projects/movie_api.svg" alt="Movie API">
+                        <img class="LatestProjects__picture" src="img/latest_projects/movie_api.svg" alt="Movie API">
                         <h3 class="latestprojectsheader">Movie API</h3>
                     </a>
                     <p class="latestprojectstext">This is a RESTful API for movies. It is built using Node.js, Express,
@@ -290,7 +301,7 @@
                 <div class="LatestProjects__item">
                     <a href="./projects/javascript_todo_list.html">
                         <!--Backend-project2-->
-                        <img src="img/latest_projects/JavaScript ToDo List.svg" alt="JavaScript ToDo List">
+                        <img class="LatestProjects__picture" src="img/latest_projects/JavaScript ToDo List.svg" alt="JavaScript ToDo List">
                         <h3 class="latestprojectsheader">JavaScript ToDo List</h3>
                     </a>
                     <p class="latestprojectstext">This is a simple to-do list application that allows users to add,
@@ -303,7 +314,7 @@
                 <div class="LatestProjects__item">
                     <a href="./projects/javascript_pokemon_library.html">
                         <!--Backend-project2-->
-                        <img src="img/latest_projects/JavaScript Pokémon Library.svg" alt="JavaScript Pokémon library">
+                        <img class="LatestProjects__picture" src="img/latest_projects/JavaScript Pokémon Library.svg" alt="JavaScript Pokémon library">
                         <h3 class="latestprojectsheader">JavaScript Pokémon library</h3>
                     </a>
                     <p class="latestprojectstext">This PokéPedia App lists information about Pokémons loaded from an
@@ -315,6 +326,7 @@
                     </a>
                 </div>
             </div>
+          </div>
         </div>
 
         <!--  <h2 class="CollectionHeader">Recommended</h2>
@@ -387,7 +399,7 @@
 
         </footer>
 
-        <script src="js/tota11y.min.js"></script>
+       <!--  <script src="js/tota11y.min.js"></script> -->
 </body>
 
 </html>
