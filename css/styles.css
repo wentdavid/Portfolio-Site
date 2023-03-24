@@ -83,6 +83,9 @@ h1 {
     color: var(--color-active);
   }
 
+    li {
+      margin-bottom: 10px;
+    }
   
 
   button:hover, button:focus {
@@ -342,8 +345,13 @@ code {
     border-radius: 30px;
     box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
     transition: all .2s ease-in-out;
-    
   }
+
+  .contact__project {
+      border-radius: 30px;
+      box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
+      transition: all .2s ease-in-out;
+    }
 
     .contact__item:hover {
       cursor: pointer;
@@ -356,6 +364,13 @@ code {
       margin: -6px;
       margin-right: 18px;
       align-self: center;
+      transition: all .2s ease-in-out;
+    }
+
+    .contact__project:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      
     }
 
  .socials-container {
@@ -536,7 +551,10 @@ code {
  }
 
 .collection__itemtext {
-  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 
@@ -550,26 +568,59 @@ code {
 
 }
 
+.collection_projectpage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 .collection__photo {
   max-width: 100%;
 }
 
-.backtoprojects {
+.gotoprojects {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  text-decoration: none;
-  text-decoration-color: #ffffff;
-
+  top: 20px;
+  left: 20px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  padding: 6px 13px;
+  transition: all .2s ease-in-out;
 }
+
+.gotoprojects:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  
+}
+
 
 .project__photo {
   height: 600px;
   width: 100%;
   object-fit: cover;
 }
+
+.projectcontent {
+  max-width: 900px;
+  margin: auto;
+}
+
+.project_text_container_effect {
+  padding: 5px 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 0.4);
+  transition: all .2s ease-in-out;
+  margin-bottom: 40px;
+}
+
 
 @keyframes FadeIn {
   0% {
@@ -591,6 +642,10 @@ code {
 
 .project__item {
   margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -602,7 +657,7 @@ code {
   height: 70px;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(2px);
 }
 
 .contactmeheader {
