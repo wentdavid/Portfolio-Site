@@ -30,6 +30,7 @@
                 <img class="project__photo" src="../img/project_images/Angular Movie library.png" alt="Angular Movie library">    
                 <div class="project__item">
                      <div class="projectcontent">
+                        
                 <h2>Angular Movie library</h2>
 <div class="animate__animated animate__pulse">
                 <div class="contact">
@@ -57,122 +58,68 @@
                         href="https://wentdavid.github.io/myFlix-Angular-client/">here</a>.</p>
                 
                 
-                <h2>Project Overview</h2>
                 <div class="project_text_container_effect">
-                <h3>Project dependencies</h3>
-                <ul>
-                    <li>Node.js</li>
-                    <li>Angular CLI</li>
-                    <li>Angular Material</li>
-                    <li>Angular Flex Layout</li>
-                    <li>TypeScript</li>
-                </ul>
+                <h3>Purpose & Context</h3>
+                <p>The purpose of the myFlix-Angular app was to create a full-stack project that showcases expertise in Angular, Node.js, Express, and TypeScript, while offering a user-friendly platform for movie enthusiasts to explore and manage their favorite films. Another goal was to reuse the Movie API that was previously created and integrate it into different frameworks.</p>
                  </div>
+
                 <div class="project_text_container_effect">
-                <h3>Getting started</h3>
-                <ol>
-                    <li>Clone the repository: <code>git clone https://github.com/your-username/myFlix-Angular-client.git</code></li>
-                    <li>Change into the project directory: <code>cd myFlix-Angular-client</code></li>
-                    <li>Install dependencies: <code>npm install</code></li>
-                    <li>Start the development server: <code>ng serve</code></li>
-                </ol>
-                <p>The application should be visible at <code>http://localhost:4200/</code>.</p>
+                <h3>Objective</h3>
+                <p>The primary objective of the project was to build a complete, responsive, and user-friendly application with Angular that allows users to explore and manage their favorite movies while demonstrating my skills in full-stack development.</p>
                 </div>
                 
-                <h2>Code organization</h2>
+    
                 <div class="project_text_container_effect">
-                <h3 id="modules">Modules</h3>
-                <ul>
-                    <li><code>AppRoutingModule</code>: handles application routing</li>
-                    <li><code>AppModule</code>: the root module that bootstraps the application and imports all other modules</li>
-                </ul>
+                <h3>Approach</h3>
+                <ol>
+                    <li><strong>Project Dependencies:</strong> The project utilized Node.js, Angular CLI, Angular Material, Angular Flex Layout, and TypeScript for development.</li>
+                    <li><strong>Code Organization:</strong>The code was organized into modules and components, providing a clear structure and separation of concerns. </li>
+                    <li><strong>Server-Side Management: </strong> A RESTful API that was previously developed using Node.js and Express to handle server-side tasks and interact with the movie database.</li>
+                    <li><strong>Client-Side Management: </strong> Angular was used to build a responsive and user-friendly single-page application, with components like user registration, login, movie cards, and profile management.</li>
+
+                </ol>
                      </div>
                      <div class="project_text_container_effect">
-                <h3 id="components">Components</h3>
-                <p>This module provides the following components:</p>
-                <ul>
-                    <li><code>AppComponent</code>: The main component for the app.</li>
-                    <li><code>UserRegistrationFormComponent</code>: A component that provides a form for user registration.</li>
-                    <li><code>UserLoginFormComponent</code>: A component that provides a form for user login.</li>
-                    <li><code>MovieCardComponent</code>: A component that displays movie information in a card format.</li>
-                    <li><code>WelcomePageComponent</code>: A component that provides a welcome page for the app.</li>
-                    <li><code>ProfileComponent</code>: A component that displays the user's profile information.</li>
-                    <li><code>NavbarComponent</code>: A component that displays a navbar for the app.</li>
-                    <li><code>GenreComponent</code>: A component that displays movies with a specific genre.</li>
-                    <li><code>DirectorComponent</code>: A component that displays movies directed by a specific director.</li>
-                    <li><code>SynopsisComponent</code>: A component that displays the synopsis of a movie.</li>
-                </ul>
-                </div>
-                <div class="project_text_container_effect">
-                <h3 id="routes">Routes</h3>
-                <p>This module provides the following routes:</p>
-                <ul>
-                    <li><code>/welcome</code>: The welcome page for the app.</li>
-                    <li><code>/user</code>: The user registration page.</li>
-                    <li><code>/login</code>: The user login page.</li>
-                    <li><code>/movies</code>: The page that displays all movies.</li>
-                    <li><code>/profile</code>: The user's profile page.</li>
-                    <li><code>/genres/:name</code>: The page that displays movies with a specific genre.</li>
-                    <li><code>/directors/:name</code>: The page that displays movies directed by a specific director.</li>
-                </ul>
-                </div>
-                <div class="project_text_container_effect">
+                <h3>Challenges</h3>
+                <p>The primary challenge in building the myFlix-Angular-client was mastering the Angular framework, integrating it with the server-side, and creating a seamless user experience. By dedicating time to learning Angular concepts and best practices, I was able to overcome these challenges and create a highly functional application.</p>
                 
-                <h3 id="api-endpoints">API Endpoints</h3>
+                </div>
+                <div class="project_text_container_effect">
+                <h3>Duration</h3>
+                <p>The development process took less time than initially anticipated due to the understanding already gained from the previous React Movie app. Although the learning curve associated with Angular and its integration with the back-end is higher, the structured approach offered by Angular was appreciated. The time invested allowed for a solid understanding of the framework and its various features, resulting in a polished final product.</p>
+                </div>
+
+                <div class="project_text_container_effect">
+                <h3 id="api-endpoints">Project Highlights</h3>
                 <p>The following API endpoints are used by this service:</p>
                 <ul>
-                    <li><code>/users</code>: User registration endpoint</li>
-                    <li><code>/login</code>: User login endpoint</li>
-                    <li><code>/movies</code>: Gets all movies from the API</li>
-                    <li><code>/movies/{title}</code>: Gets a movie with the given title from the API</li>
-                    <li><code>/movies/directors/{directorName}</code>: Gets all movies directed by the given director from the API</li>
-                    <li><code>/movies/genre/{genreName}</code>: Gets all movies with the given genre from the API</li>
-                    <li><code>/users/{username}</code>: Gets the user with the current username from the API</li>
-                    <li><code>/users/{username}/movies/{movieId}</code>: Adds the given movie to the favorite movies of the user with
-                        the current username</li>
-                    <li><code>/users/{username}/movies/{movieId}</code>: Removes the given movie from the favorite movies of the user
-                        with the current username</li>
-                    <li><code>/users/{username}</code>: Edits the user information of the user with the current username</li>
-                    <li><code>/users/{username}</code>: Deletes the user with the current username from the API</li>
+                    <li>Modular code organization, separating concerns into components and modules for better maintainability and scalability.</li>
+                    <li>Responsive design using Angular Material and Angular Flex Layout, ensuring a seamless user experience across devices.</li>
+                    <li>Robust API integration, utilizing endpoints for user registration, login, movie details retrieval, and profile management.</li>
+                    <li>Implementation of user authentication and authorization with JWT authentication for secure user access.</li>
                 </ul>
                 </div>
+
                 <div class="project_text_container_effect">
-                
-                <h3 id="methods">Methods</h3>
-                <p>The following methods are provided by this service:</p>
-                <ul>
-                    <li><code>userRegistration(userDetails: any): Observable&lt;any&gt;</code>: Makes an API call to the user
-                        registration endpoint. userDetails: User registration details. Returns an Observable&lt;any&gt;.</li>
-                    <li><code>userLogin(userDetails: any): Observable&lt;any&gt;</code>: Makes an API call to the user login endpoint.
-                        userDetails: User login details. Returns an Observable&lt;any&gt;.</li>
-                    <li><code>getAllMovies(): Observable&lt;any&gt;</code>: Gets all movies from the API. Returns an
-                        Observable&lt;any&gt;.</li>
-                    <li><code>getMovie(title: string): Observable&lt;any&gt;</code>: Gets a movie with the given title from the API.
-                        title: Title of the movie to retrieve. Returns an Observable&lt;any&gt;.</li>
-                    <li><code>getDirector(directorName: string): Observable&lt;any&gt;</code>: Gets all movies directed by the given
-                        director from the API. directorName: Name of the director. Returns an Observable&lt;any&gt;.</li>
-                    <li><code>getGenre(genreName: string): Observable&lt;any&gt;</code>: Gets all movies with the given genre from the
-                        API. genreName: Name of the genre. Returns an Observable&lt;any&gt;.</li>
-                    <li><code>getUser(): Observable&lt;any&gt;</code>: Gets the user with the current username from the API. Returns an
-                        Observable<any>.</li>
-                    <li><code>getFavMovies(): Observable<any></code>: Gets the favorite movies of the user with the current username
-                        from the API. Returns an Observable<any>.</li>
-                    <li><code>addFavoriteMovie(movieId: string): Observable<any></code>: Adds the given movie to the favorite movies of
-                        the user with the current username. movieId: ID of the movie to add to favorites. Returns an Observable<any>.
-                    </li>
-                    <li><code>removeFavoriteMovie(movieId: string): Observable<any></code>: Removes the given movie from the favorite
-                        movies of the user with the current username. movieId: ID of the movie to remove from favorites. Returns an
-                        Observable<any>.</li>
-                    <li><code>editUser(updatedUser: any): Observable<any></code>: Edits the user information of the user with the
-                        current username. updatedUser: Updated user information. Returns an Observable<any>.</li>
-                    <li><code>deleteUser(): Observable<any></code>: Deletes the user with the current username from the API. Returns an
-                        Observable<any>.</li>
-                    <li><code>extractResponseData(res: any): any</code>: Extracts the response data from the API response. res: API
-                        response. Returns the response data.</li>
-                    <li><code>handleError(error: HttpErrorResponse): any</code>: Handles API errors. error: API error. Returns an error
-                        message.</li>
-                </ul>
+                <h3>Conclusion</h3>
+                <p>The myFlix-Angular project showcases the potential of Angular as a powerful client-side framework for building responsive and user-friendly web applications. The final product demonstrates my expertise in full-stack development, particularly with Angular, Node.js, and Express. The successful completion of this project not only serves as an addition to my professional portfolio but also as a testament to the importance of dedication and continuous learning in the field of web development.</p>
             </div>
+
+             <div class="project_text_container_effect">
+                <h3>Future Improvements</h3>
+                <p>There are several potential improvements that can be made to the myFlix-Angular app in the future to enhance its functionality and user experience:</p>
+                <ol>
+                    <li><strong>Advanced Filtering and Sorting:</strong> Implement more advanced filtering and sorting options for users to easily find movies based on specific criteria such as release year, ratings, or language.</li>
+                    <li><strong>Social Features:</strong>Integrate social features like user reviews, comments, or recommendations, allowing users to share their opinions and favorite movies with others.</li>
+                    <li><strong>Mobile App: </strong> Develop a native mobile app for Android and iOS platforms, providing an even more convenient and accessible experience for users on the go.</li>
+                    <li><strong>Performance Optimization: </strong> Continuously monitor the app's performance and optimize it for faster load times and smoother user experience, particularly on slower connections or devices.</li>
+                    <li><strong>Internationalization: </strong> Add support for multiple languages, making the app accessible to a broader audience and promoting cultural diversity.</li>
+                    <li><strong>Personalized Content: </strong> Implement personalized content recommendations based on user preferences and browsing history, providing a more tailored experience for each user.</li>
+                    <li><strong>Enhanced Security: </strong> Continuously review and update security measures to protect user data and privacy, ensuring a safe and secure platform for movie enthusiasts.</li>
+                </ol>
+                <p>By implementing these future improvements, the myFlix-Angular app can continue to evolve and offer an even better experience for its users while showcasing the latest advancements in full-stack web development.</p>
+
+                     </div>
             </div>
             
             

@@ -1,285 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+                <meta charset="utf-8">
+                <title>David Went - Portfolio</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8">
-    <title>David Went - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="preconnect" href="https://fonts.googleapis.com"> 
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+                
+                    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon"/>
+               
+                    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+                <link rel="stylesheet" type="text/css" href="../css/styles.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+                
+                  
+                
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-
-
-
-</head>
-
-<body>
-
-    <div class="backtoprojects">
-        <a style="color: black; margin: 10px; font-weight: 400; " href="../mywork.html">
-            < Back to Projects</a>
-    </div>
-
-
-    <img class="project__photo" src="../img/project_images/movie_api.png" alt="Angular Movie library">
-    <div class="project__item">
-        <h2>Movie API</h2>
-
-        <div class="contact">
-            <div class="contact__project">
-                <a href="https://github.com/wentdavid/movie_api">
-
-                    <img src="../img/icons/view_on_github.svg" alt="View on Github">
-                </a>
-            </div>
-
-        </div>
-
-        <div>
-            <p>This is a RESTful API for movies. It is built using Node.js, Express, and MongoDB, and it is designed to provide
-                users with access to information about movies, including titles, descriptions, genres, directors, actors, and
-                images.</p>
+    </head>
            
-            <h2 id="getting-started">Getting Started</h2>
-            <p>To get started with this API, you will need to have Node.js and MongoDB installed on your machine. Once you have
-                these dependencies installed, follow these steps:</p>
-            <ol>
-                <li>Clone this repository to your local machine.</li>
-                <li>Navigate to the root directory of the repository in your terminal.</li>
-                <li>Run <code>npm install</code> to install the required packages.</li>
-                <li>Run <code>npm run start</code> to start the server.</li>
-                <li>Open your browser and go to <a href="http://localhost:8080/">http://localhost:8080/</a> to verify that the
-                    server is running.</li>
-            </ol>
-            <h2 id="technology-stack">Technology Stack</h2>
-            <ul>
-                <li>Node.js</li>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>Mongoose</li>
-                <li>Passport</li>
-                <li>JSON Web Tokens (JWT)</li>
-            </ul>
-            <h2 id="api-endpoints">API Endpoints</h2>
-            <p>Once the server is running, clients can make requests to the following endpoints:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Endpoint</th>
-                        <th>HTTP Method</th>
-                        <th>Description</th>
-                        <th>Requires Authorization</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>/movies</td>
-                        <td>GET</td>
-                        <td>Responds with a list of all movies.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/movies/:Title</td>
-                        <td>GET</td>
-                        <td>Responds with details about a specific movie based on the title.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/movies/genres/:Name</td>
-                        <td>GET</td>
-                        <td>Responds with all movies that match the given genre name.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/movies/directors/:Name</td>
-                        <td>GET</td>
-                        <td>Responds with the director data that matches the given name.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/users</td>
-                        <td>GET</td>
-                        <td>Responds with all users in the database.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/users/:Username</td>
-                        <td>GET</td>
-                        <td>Responds with the user that matches the given username.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/users</td>
-                        <td>POST</td>
-                        <td>Allows new users to register by creating a new user document in the database. A JSON object holding data
-                            about the users to add, structured like
-                            this:<code>{ "Username": "String","Password": "String","Email": "String","Birthday": "Date"}</code>. A
-                            JSON object holding data about the user that was added, structured like this
-                            <code>{ "username" : "Test1", "Password": "1234", "Email": "testtest@gmail.com", "Birthday": "1988-08-08", "favorite movie" : [] }</code>
-                            including an ID </td>
-                        <td>No</td>
-                    </tr>
-                    <tr>
-                        <td>/users/:Username</td>
-                        <td>PUT</td>
-                        <td>Allows users to update their user information in the database.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/users/:Username/movies/:MovieID</td>
-                        <td>POST</td>
-                        <td>Allow users to add a movie to their list of favorites.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/users/:Username/movies/:MovieID</td>
-                        <td>DELETE</td>
-                        <td>Allow users to delete a movie from their list of favorites.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/users/:Username</td>
-                        <td>DELETE</td>
-                        <td>This method allows existing users to be deregistered from the application.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/verify-password</td>
-                        <td>POST</td>
-                        <td>This method verifies the user's password before allowing updates to be made.</td>
-                        <td>Yes</td>
-                    </tr>
-                    <tr>
-                        <td>/documentation</td>
-                        <td>GET</td>
-                        <td>This method serves the documentation HTML file.</td>
-                        <td>No</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2 id="authentication">Authentication</h2>
-            <p>All endpoints (except for the root endpoint) require authentication using JSON Web Tokens (JWT). To access these
-                endpoints, clients must include a valid JWT in the Authorization header of the request.</p>
-            
-            <h2 id="passport">Passport</h2>
-            <p>This API uses the Passport module for authentication and authorization. Passport is middleware for Node.js that
-                provides a set of authentication strategies. It is flexible and modular, and it allows developers to easily add
-                authentication to their applications.
-            
-                The following Passport strategies are used in this API:</p>
-            
-            <ul>
-                <li><strong>LocalStrategy</strong> - For local authentication.</li>
-                <li><strong>JWTStrategy</strong> - For JSON Web Token (JWT) authentication.</li>
-            </ul>
-            <h2 id="examples">Examples</h2>
-            <p>Here are a examples of my projects that use this API:</p>
-            <ul>
-                <li>Built with React: <a href="https://gleans-moviedb.netlify.app/">This web application</a> allows users to browse
-                    a list of movies, view movie details, and add movies to their list of favorites. It is built using React and
-                    integrates with the Movie API.</li>
-                <li>Built with Angular: <a href="https://wentdavid.github.io/myFlix-Angular-client/">This is a single-page web
-                        application</a> that allows users to browse a list of movies, view movie details, and add movies to their
-                    list of favorites. It is built using Angular and integrates with the Movie API.</li>
-            </ul>
-            <p>Feel free to check out my projects to see how the Movie API can be used in real-world applications.</p>
-            <h2 id="license">License</h2>
-            <p>This project is licensed under the terms of the MIT license. See the <a href="LICENSE">LICENSE</a> file for more
-                details.</p>
-
+    <body>
+<div class="animate__animated animate__fadeIn">
+        <div class="gotoprojects">
+            <a style="color: rgba(255, 255, 255, 0.7);  font-weight: 400; text-decoration: none; " href="../mywork.html"> < Go to Projects</a>
         </div>
 
-        <div class="collection">
-            <div class="collection__item">
-                <a href="./angular_movie_library.html">
-                    <img class="collection__photo" src="../img/latest_projects/Angular Movie library.svg"
-                        alt="Angular Movie library">
-                    <h5 class="collection__itemtext">Angular Movie library</h5>
-                </a>
+        
+                <img class="project__photo" src="../img/project_images/movie_api.png" alt="Angular Movie library">    
+                <div class="project__item">
+                     <div class="projectcontent">
+                        
+                <h2>Movie API</h2>
+<div class="animate__animated animate__pulse">
+                <div class="contact">
+                    <div class="contact__project">
+                <a href="https://github.com/wentdavid/movie_api">
+                
+                            <img src="../img/icons/view_on_github.svg" alt="View on Github">
+                        </a>
+                    </div>
+            
+                </div>
+                </div>
+
+           
+                <p>The Movie API is a RESTful API built using Node.js, Express, and MongoDB. It is designed to provide users with access to information about movies, including titles, descriptions, genres, directors, actors, and images.</p>
+                
+                
+                <div class="project_text_container_effect">
+                <h3>Purpose & Context</h3>
+                <p>The purpose of the Movie API is to create a backend service that can be consumed by various front-end applications to access and manage movie-related data. The API showcases expertise in backend development, API design, and integration with a MongoDB database.</p>
+                 </div>
+
+                <div class="project_text_container_effect">
+                <h3>Objective</h3>
+                <p>The primary objective of the project is to build a complete, secure, and scalable API that allows users to retrieve and manage movie data, demonstrating skills in backend development, API design, and database integration.</p>
+                </div>
+                
+    
+                <div class="project_text_container_effect">
+                <h3>Approach</h3>
+                <ol>
+                    <li><strong>Project Dependencies:</strong> The project utilized Node.js, MongoDB, Express, Mongoose, Passport, and JSON Web Tokens (JWT) for development.</li>
+                    <li><strong>API Design: </strong>A comprehensive set of API endpoints was designed to handle various movie-related operations such as fetching movie data, user registration, and managing user profiles.</li>
+                    <li><strong>Authentication: </strong>User authentication was implemented using Passport and JWT, ensuring secure access to API endpoints.</li>
+                    <li><strong>Database Integration: </strong>MongoDB and Mongoose were used to store and manage movie and user data.</li>
+
+                </ol>
+                     </div>
+                     <div class="project_text_container_effect">
+                <h3>Challenges</h3>
+                <p>The primary challenge in building the Movie API was designing a comprehensive set of API endpoints, implementing user authentication using Passport and JWT, and integrating the MongoDB database. By dedicating time to learning about best practices in API design, authentication, and database integration, these challenges were overcome, resulting in a highly functional and secure API.</p>
+                
+                </div>
+                <div class="project_text_container_effect">
+                <h3>Duration</h3>
+                <p>The development process took as long as initially anticipated. The learning curve associated with API design, user authentication, and database integration contributed to a solid understanding of these technologies, resulting in a polished final product.</p>
+                </div>
+
+                <div class="project_text_container_effect">
+                <h3 id="api-endpoints">Project Highlights</h3>
+                <ul>
+                    <li>Comprehensive set of API endpoints, designed to handle various movie-related operations.</li>
+                    <li>Robust user authentication and authorization using Passport and JWT, ensuring secure access to API endpoints.</li>
+                    <li>Seamless integration with MongoDB for storing and managing movie and user data.</li>
+                    <li>Modular and scalable API design, allowing for easy expansion and maintenance.</li>
+                </ul>
+                </div>
+
+                <div class="project_text_container_effect">
+                <h3>Conclusion</h3>
+                <p>The Movie API project showcases the potential of Node.js, Express, and MongoDB as a powerful technology stack for building scalable and secure backend services. The final product demonstrates expertise in backend development, API design, and database integration. The successful completion of this project not only serves as an addition to my professional portfolio but also as a testament to the importance of dedication and continuous learning in the field of backend development.</p>
             </div>
 
+             <div class="project_text_container_effect">
+                <h3>Future Improvements</h3>
+                <p>There are several potential improvements that can be made to the myFlix-Angular app in the future to enhance its functionality and user experience:</p>
+                <ol>
+                    <li><strong>Additional endpoints: </strong>The Movie API can be expanded to include additional endpoints to provide more data and functionality to front-end applications. For example, endpoints could be added to allow users to rate movies or provide reviews.</li>
+                    <li><strong>Data validation and error handling: </strong> The API can be enhanced to include data validation and error handling to ensure that only valid data is accepted and appropriate error messages are returned in case of any issues.</li>
+                    <li><strong>Enhanced security: </strong>While the Movie API already includes user authentication and authorization, additional security measures such as SSL/TLS encryption and rate limiting can be implemented to further protect the API from potential security threats.</li>
+                    <li><strong>Integration with third-party services: </strong>Integration with third-party services such as social media platforms can allow users to share their movie preferences with their friends and followers, creating a more social and engaging experience.</li>
+                    <li><strong>API Monitoring: </strong>Implement monitoring tools to track API usage, response times, and errors. This can help identify potential issues and allow for proactive troubleshooting and optimization.</li>
+                </ol>
+                <p>By implementing these future improvements, the myFlix-Angular app can continue to evolve and offer an even better experience for its users while showcasing the latest advancements in full-stack web development.</p>
 
+                     </div>
+            </div>
+            
+            
+            <div class="collection_projectpage">
             <div class="collection__item">
-                <a href="./react_native_chat.html">
-                    <img class="collection__photo" src="../img/latest_projects/react_native_chat.svg"
-                        alt="React Native Chat">
-                    <h5 class="collection__itemtext">React Native Chat</h5>
-                </a>
+                <a class="collection__itemtext" href="./angular_movie_library.html">
+                    <img class="collection__photo" src="../img/latest_projects/Angular Movie library.svg" alt="Angular Movie library">    
+                <h5>Angular Movie library</h5>
+                </a>  
             </div>
 
+            
+                <div class="collection__item">
+                    <a class="collection__itemtext" href="./react_native_chat.html">
+                        <img class="collection__photo" src="../img/latest_projects/react_native_chat.svg"
+                            alt="React Native Chat">
+                        <h5 >React Native Chat</h5>
+                    </a>
+                </div>
 
-            <div class="collection__item">
-                <a href="./react_calendar_meet_app.html">
-                    <img class="collection__photo" src="../img/latest_projects/React_calendar_meet_app.svg"
-                        alt="React Calendar Meet App">
-                    <h5 class="collection__itemtext">React Calendar Meet App</h5>
-                </a>
+               
+                    <div class="collection__item">
+                        <a class="collection__itemtext" href="./react_calendar_meet_app.html">
+                            <img class="collection__photo" src="../img/latest_projects/React_calendar_meet_app.svg"
+                                alt="React Calendar Meet App">
+                            <h5>React Calendar Meet App</h5>
+                        </a>
+                    </div>
+
+                    
+                        <div class="collection__item">
+                            <a class="collection__itemtext" href="./react_movie_library.html">
+                                <img class="collection__photo" src="../img/latest_projects/React_Movie_Library.svg"
+                                    alt="React Movie Library">
+                                <h5 >React Movie Library</h5>
+                            </a>
+                        </div>
+
+                        
+                            <div class="collection__item">
+                                <a class="collection__itemtext" href="./movie_api.html">
+                                    <img class="collection__photo" src="../img/latest_projects/movie_api.svg"
+                                        alt="Movie API">
+                                    <h5>Movie API</h5>
+                                </a>
+                            </div>
+
+                            
+                                <div class="collection__item">
+                                    <a class="collection__itemtext" href="./javascript_todo_list.html">
+                                        <img class="collection__photo" src="../img/latest_projects/JavaScript ToDo List.svg" 
+                                        alt="JavaScript ToDo List">
+                                        <h5>JavaScript ToDo List</h5>
+                                    </a>
+                                </div>
+
+                                
+                                    <div class="collection__item">
+                                        <a class="collection__itemtext" href="./javascript_pokemon_library.html">
+                                            <img class="collection__photo" src="../img/latest_projects/JavaScript Pokémon Library.svg"
+                                                alt="JavaScript Pokémon Library">
+                                            <h5 class="collection__itemtext">JavaScript Pokémon Library</h5>
+                                        </a>
+                                    </div>
+             
             </div>
-
-
-            <div class="collection__item">
-                <a href="./react_movie_library.html">
-                    <img class="collection__photo" src="../img/latest_projects/React_Movie_Library.svg"
-                        alt="React Movie Library">
-                    <h5 class="collection__itemtext">React Movie Library</h5>
-                </a>
-            </div>
-
-
-            <div class="collection__item">
-                <a href="./movie_api.html">
-                    <img class="collection__photo" src="../img/latest_projects/movie_api.svg" alt="Movie API">
-                    <h5 class="collection__itemtext">Movie API</h5>
-                </a>
-            </div>
-
-
-            <div class="collection__item">
-                <a href="./javascript_todo_list.html">
-                    <img class="collection__photo" src="../img/latest_projects/JavaScript ToDo List.svg"
-                        alt="JavaScript ToDo List">
-                    <h5 class="collection__itemtext">JavaScript ToDo List</h5>
-                </a>
-            </div>
-
-
-            <div class="collection__item">
-                <a href="./javascript_pokemon_library.html">
-                    <img class="collection__photo" src="../img/latest_projects/JavaScript Pokémon Library.svg"
-                        alt="JavaScript Pokémon Library">
-                    <h5 class="collection__itemtext">JavaScript Pokémon Library</h5>
-                </a>
-            </div>
-
         </div>
-
-
+   
+           
+            
 <!--Contact Me-->
 <a href="mailto:davidwent@me.com">
     <div class="contactme" alt="Contact Me">
         <h3 class="contactmeheader">Contact Me</h3>
-        <img class="email" src="img/email.svg">
+        <img class="email" src="../img/email.svg">
     </div>
 </a>
-        <footer class="page-footer">
 
 
+            <footer class="page-footer">
+        <div class="contact-container">
+            <div class="animate__animated animate__slideInLeft">
+            <div class="contact">
+                <div class="contact__item">
+                    <a href="https://wa.me/491738661878">
+                        <!--Whats App-->
+                        <img src="../img/icons/WhatsApp.svg" alt="Whats App">
+                    </a>
+                </div>
 
 
-        </footer>
+                <div class="contact__item">
+                    <a href="./assets/David Went.vcf">
+                        <!--vCrad Icon-->
+                        <img src="../img/icons/vCard.svg" alt="vCard">
+                    </a>
+                </div>
 
-        <script src="../js/tota11y.min.js"></script>
-</body>
+
+                <div class="contact__item">
+                    <a href="mailto:davidwent@me.com">
+                        <!--Mail Icon-->
+                        <img src="../img/icons/Mail.svg" alt="Mail">
+                    </a>
+                </div>
+
+                <div class="contact__item">
+                    <a href="">
+                        <!--Imprint Icon-->
+                        <img src="../img/icons/imprint.svg" alt="Imprint">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="socials-container">
+            <div class="animate__animated animate__slideInLeft">
+            <div class="socials">
+                <div class="contact__item">
+                    <a href="https://www.linkedin.com/in/davidwent/">
+                        <!--LinkedIn-->
+                        <img src="../img/icons/Linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
+
+                <div class="contact__item">
+                    <a href="https://github.com/wentdavid">
+                        <!--GitHub-->
+                        <img src="../img/icons/GitHub.svg" alt="GitHub">
+                    </a>
+                </div>
+
+                <div class="contact__item">
+                    <a href="https://medium.com/@wentdavid">
+                        <!--Medium-->
+                        <img src="../img/icons/medium.svg" alt="medium">
+                    </a>
+                </div>
+
+                <div class="contact__item">
+                    <a href="https://twitter.com/went_david">
+                        <!--Twitter-->
+                        <img src="../img/icons/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+
+                <div class="contact__item">
+                    <a href="https://open.spotify.com/user/1127492478?si=680546440143478e">
+                        <!--Spotify-->
+                        <img src="../img/icons/Spotify.svg" alt="Spotify">
+                    </a>
+                </div>
+
+                <div class="contact__item">
+                    <a href="https://www.instagram.com/went_david">
+                        <!--Instagram Icon-->
+                        <img src="../img/icons/Instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+            <!-- <script src="../js/tota11y.min.js"></script> -->
+    </body>
 
 </html>
