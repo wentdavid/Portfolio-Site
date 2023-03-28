@@ -312,12 +312,16 @@ code {
   .introtext {
     display: block;
   }
+.helloworld {
+  margin-top: 30px;
+}
+
  .about-text {
     display: block;
-    margin: 10%;
+    margin: 5%;
   }
 
-    .about-picture {
+  .about-picture {
       display: block;
       margin: 5%;
     }
@@ -610,7 +614,8 @@ code {
 
 .projectcontent {
   max-width: 900px;
-  margin: auto;
+  margin-top: -30px;
+
 }
 
 .project_text_container_effect {
@@ -619,6 +624,16 @@ code {
   box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 0.4);
   transition: all .2s ease-in-out;
   margin-bottom: 40px;
+}
+
+.about_text_container_effect {
+  max-width: 1000px;
+  width: 95%;
+  padding: 5px 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 0.4);
+  transition: all .2s ease-in-out;
+  margin: 0 auto;
 }
 
 
@@ -683,9 +698,8 @@ position: absolute;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
   }
-
+  
   
 
   .profile {
@@ -845,7 +859,28 @@ position: absolute;
 
 
 
+@media only screen and (max-width: 700px) {
+  .about-picture {
+    display: flex;
+    justify-content: center;
+  }
 
+  .about-text {
+  margin-left: -10px;
+  margin-right: -10px;
+  
+  }
+}
+
+@media only screen and (max-width: 434px) {
+  .introtext {
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  .helloworld{
+    margin-top: 75px;
+  }
+}
 
 /*has to be at the end of the file*/
 @media all and (max-width: 500px) {
