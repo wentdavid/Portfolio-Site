@@ -26,7 +26,7 @@ a {
 
 body{background-color: white;}
 body{font-family: 'Roboto', sans-serif ;
-font-weight: 100;
+font-weight: 200;
 font-size: 16px;
 line-height: 1.6;}
 
@@ -103,14 +103,68 @@ code {
   padding: 2px 5px;
   color: #24292e;
 }
- 
-  .navigation-list__item--active {
+
+
+  .navigation-list__item {
+    border: solid 2px #ffffff !important;
+    color: #2487dd !important;
     text-decoration: none;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s ease-in-out;
+    margin: -5px;
+    
+    
     
   }
 
+  .navigation-list__item:hover {
+    border: solid 2px #2487dd !important;
+    background-color: #ffffff !important;
+    color: #2487dd !important;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.4);
+  }
+
+    .navigation-list__item--active {
+      background-color: #2487dd !important;
+      border: solid 2px #2487dd !important;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: 400;
+      border-radius: 30px;
+      padding: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.4);
+    }
+
+        .navigation-list__item--active:hover {
+          background-color: #2487dd !important;
+          border: solid 2px #2487dd !important;
+          color: #ffffff !important;
+          text-decoration: none;
+          font-weight: 400;
+          border-radius: 30px;
+          padding: 4px;
+          padding-left: 10px;
+          padding-right: 10px;
+          box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.4);
+        }
+
+      
+
   .navigation-list {
     list-style-type: none;
+    
   }
 
   .navigation-list li {
@@ -145,8 +199,9 @@ code {
   
 
   .homeAlign {
-   margin-top: 5%;
+   margin-top: 2%;
     margin-left: 9%;
+    
   }
 
 
@@ -319,6 +374,7 @@ code {
  .about-text {
     display: block;
     margin: 5%;
+
   }
 
   .about-picture {
@@ -359,7 +415,7 @@ code {
 
     .contact__item:hover {
       cursor: pointer;
-      transform: scale(1.07);
+      transform: scale(1.03);
       
     }
 
@@ -373,7 +429,7 @@ code {
 
     .contact__project:hover {
       cursor: pointer;
-      transform: scale(1.05);
+      transform: scale(1.02);
       
     }
 
@@ -390,6 +446,23 @@ code {
     flex-direction: row;
     padding-bottom: 15px;
   }
+
+  .download-button {
+    min-width: 160px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .download-button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    
+  }
+
+
 
 
 
@@ -454,7 +527,7 @@ code {
 
 .LatestProjects__item:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .LatestProjects__picture {
@@ -486,16 +559,21 @@ code {
   font-weight: 600;
   font-size: 0.8rem;
   text-align: center;
-  color: #000000;
+  color: #2487dd;
   background-color: transparent;
   border: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
-
+  border-radius: 30px;
 }
 
 .latestprojectsbutton:hover {
   text-shadow: #000000;
+  border: solid 2px #2487dd;
+  border-radius: 30px;
+  color: #2487dd !important;
+  opacity: 1;
+
 }
 
 .Recommended {
@@ -704,7 +782,8 @@ position: absolute;
 
   .profile {
     max-width: none;
-    margin: 0 auto;  
+    margin: 0 auto; 
+     
   }
 
   * {
@@ -720,19 +799,13 @@ position: absolute;
 
   .page-header {
     display: flex;
-    width: 100%;
-    padding: 20px;
-    margin: auto
+    width: 95%;
+    padding-top: 20px;
+    margin: 0 auto;
   }
 
   .page-header__item {
-    flex: 0 1 40px;
-  }
-
-  .page-header__item:hover {
-        cursor: pointer;
-        opacity: 0.4;
-        transition-duration: 0.3s;
+   
   }
 
   .page-header__item:last-child {
@@ -744,7 +817,7 @@ position: absolute;
     position: relative;
     width: 40px;
     margin-top: 5px;
-    margin-left: 10%;
+   
   }
 /* start grid fallback */
 .grid__item {
@@ -868,6 +941,7 @@ position: absolute;
   .about-text {
   margin-left: -10px;
   margin-right: -10px;
+  margin-top: -50px;
   
   }
 }
