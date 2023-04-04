@@ -1,10 +1,14 @@
-/*
-Colors used
+h3,
+h5 {
+  color: #000
+}
 
-Text Color (Black): #000000;
-Primary Color (Dark Gray): #808080;
-Secondary Color (Light Gray): #A0A0A0;
- */
+.button__form:hover,
+button:focus,
+button:hover {
+  opacity: .4;
+  cursor: pointer
+}
 
 :root {
   --primary-color: #357b70;
@@ -14,643 +18,455 @@ Secondary Color (Light Gray): #A0A0A0;
   --gray: #A0A0A0;
   --color-visited: #051c6e;
   --color-active: #A0A0A0;
-  --color-sun-one:#edc655;
-  --color-sun-two:#fcffad;
-  --color-sun-three:#f76414;
+  --color-sun-one: #edc655;
+  --color-sun-two: #fcffad;
+  --color-sun-three: #f76414
 }
 
+.navigation-list__item,
+.navigation-list__item:hover {
+  color: #306fdb !important;
+  padding: 4px 10px;
+  text-decoration: none
+}
 
 a {
   color: var(--primary-color);
+  color: #000
 }
 
-body{background-color: white;}
-body{font-family: 'Roboto', sans-serif ;
-font-weight: 200;
-font-size: 16px;
-line-height: 1.6;}
-
-
+body {
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.6
+}
 
 h1 {
-    font-size: 30px;
-    font-weight: 500;
-  }
-  
-  h2 {
-    font-size: 24px;
-    font-weight: 400;
-  }
-  
-  h3 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000 ;
-  }
+  font-size: 30px;
+  font-weight: 500
+}
 
-  h4 {
-    font-size: 14px;
-    font-weight: 300;
-    text-decoration: none;
-    color: #7A7A7A;
-  }
+h2 {
+  font-size: 24px;
+  font-weight: 400
+}
 
-  h5 {
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000000 ;
+h3 {
+  font-size: 16px;
+  font-weight: 400
+}
 
-  }
+h4 {
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #7a7a7a
+}
 
-  a {
-    color: #000000 ;
-  }
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none
+}
 
+a:visited {
+  color: var(--color-visited)
+}
 
-  a:visited {
-    /* visited link */
-    color: var(--color-visited);
-  }
+.LatestProjects__item a,
+a:focus,
+a:hover {
+  text-decoration: none
+}
 
-  a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-  }
-  
-  a:active {
-    /* selected link */
-    color: var(--color-active);
-  }
+a:active {
+  color: var(--color-active)
+}
 
-    li {
-      margin-bottom: 10px;
-    }
-  
-
-  button:hover, button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.4;
-  }
+li {
+  margin-bottom: 10px
+}
 
 code {
   background-color: #e5edf4;
   border-radius: 6px;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 0.9em;
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: .9em;
   padding: 2px 5px;
-  color: #24292e;
+  color: #24292e
 }
 
-
-  .navigation-list__item {
-    border: solid 2px #ffffff !important;
-    color: #306FDB !important;
-    text-decoration: none;
-    font-weight: 400;
-    border-radius: 30px;
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: all 0.3s ease-in-out;
-    margin: -5px;
-    
-    
-    
-  }
-
-  .navigation-list__item:hover {
-    border: solid 2px #306FDB !important;
-    background-color: #ffffff !important;
-    color: #306FDB !important;
-    text-decoration: none;
-    font-weight: 400;
-    border-radius: 30px;
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4) !important;
-  }
-
-    .navigation-list__item--active {
-      background-color: #306FDB !important;
-      border: solid 2px #306FDB !important;
-      color: #ffffff !important;
-      text-decoration: none;
-      font-weight: 400;
-      border-radius: 30px;
-      padding: 4px;
-      padding-left: 10px;
-      padding-right: 10px;
-      box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4) !important;
-      
-    
-    }
-
-        .navigation-list__item--active:hover {
-          background-color: #306FDB !important;
-          border: solid 2px #306FDB !important;
-          color: #ffffff !important;
-          text-decoration: none;
-          font-weight: 400;
-          border-radius: 30px;
-          padding: 4px;
-          padding-left: 10px;
-          padding-right: 10px;
-          box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4) !important;
-
-        }
-
-      
-
-  .navigation-list {
-    list-style-type: none;
-    
-  }
-
-  .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-  }
-
-  .button__form {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--black);
-    opacity: 60%;
-    color: var(--white);
-    text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 20px;
-    border-radius: 30px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid var(--black);
-  }
-
-  .button__form:hover, button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.4;
-  }
-
-  
-
-  .homeAlign {
-   margin-top: 2%;
-    margin-left: 9%;
-    
-  }
-
-
-  .profile__container {
-    position:relative;
-    float: left;
-    width: 150px;
-    margin-right: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "overlap";
-    padding: 10px; /* Adds a 10px inner spacing to all sides*/
-    margin: 10px;
-  }
-
-  .profile__portrait-circle {
-    width: 107%;
-    grid-area: overlap;
-    align-self: center;
-    justify-self: center;
-  
-    display: block;
-    margin: 0 0.5rem;
-    animation: pulse; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 5s; /* don't forget to set a duration! */
-    animation-iteration-count: infinite;
-    
-    }
-
-  .profile__portrait {
-    width: 100%;
-    border-radius: 50%;
-    grid-area: overlap;
-    align-self: center;
-    justify-self: center;
-   
-  }
-
-  
-
-  .profile__portrait-smallcircle {
-    width: 30%;
-    grid-area: overlap;
-
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation: pulse; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 5s; /* don't forget to set a duration! */
-    animation-iteration-count: infinite;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    }
-
-    .profile__portrait-smallcircle-container {
-      border-radius: 30px;
-        background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(8px);
-      width: 30px;
-      height: 30px;
-        grid-area: overlap;
-        display: inline-block;
-        margin-right: 13px;
-        margin-bottom: 5px;
-        animation: pulse;
-        /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 5s;
-        /* don't forget to set a duration! */
-        animation-iteration-count: infinite;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      
-    }
-
-    .circlecontainer {
-      width: 100%;
-      grid-area: overlap;
-      
-    }
-
-    .profile__portrait-bigrectangle {
-      width: 5%;
-      grid-area: overlap;
-      
-    
-      display: inline-block;
-      margin: 0 0.5rem;
-      animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 6s; /* don't forget to set a duration! */
-      animation-iteration-count: 1;
-      position: absolute;
-    bottom: 10px;
-    right: 21.5px;
-      }
-
-      .profile__portrait-mediumrectangle {
-        width: 4%;
-        grid-area: overlap;
-        
-
-        display: inline-block;
-        margin: 0 0.5rem;
-        animation-delay: 5ms;
-        animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 5s; /* don't forget to set a duration! */
-        animation-iteration-count: 1;
-        position: absolute;
-        bottom: 12px;
-        right:16px;
-        }
-
-        .profile__portrait-smallrectangle {
-          width: 4%;
-          grid-area: overlap;
-        
-        
-          display: inline-block;
-          margin: 0 0.5rem;
-          animation-delay: 1s;
-          animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-          animation-duration: 4s; /* don't forget to set a duration! */
-          animation-iteration-count: 1;
-          position: absolute;
-          bottom: 15px;
-          right: 9.5px;
-          }
-
-          .profile__portrait-smallrectangle:hover {
-          cursor: pointer;
-          display: inline-block;
-          margin: 0 0.5rem;
-        
-          animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-          animation-duration: 4s; /* don't forget to set a duration! */
-          animation-iteration-count: infinite;
-          
-          }
-
-          .profile__portrait-mediumrectangle:hover {
-            cursor: pointer;
-            display: inline-block;
-            margin: 0 0.5rem;
-            
-            animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-            animation-duration: 4s; /* don't forget to set a duration! */
-            animation-iteration-count: infinite;
-            
-            }
-
-            .profile__portrait-bigrectangle:hover {
-              cursor: pointer;
-              display: inline-block;
-              margin: 0 0.5rem;
-             
-              animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
-              animation-duration: 4s; /* don't forget to set a duration! */
-              animation-iteration-count: infinite;
-              
-              }
-    
-  .introtext {
-    display: block;
-  }
-.helloworld {
-  margin-top: 30px;
-}
-
- .about-text {
-    display: block;
-    margin: 5%;
-
-  }
-
-  .about-picture {
-      display: block;
-      margin: 5%;
-    }
-
-  .contact-container {
-   margin-top: 40px;
-   margin-left: -10%;
-   padding-left: 10%;
-   overflow-x: scroll;
- }
-
-  .contact {
-    margin: 5px;
-    max-width: none;
-    max-height: fit-content;
-    
-    display: flex;
-    flex-direction: row;
-  }
-
-  .contact__item {
-    line-height: 0;
-    margin: 5px;
-    align-self: center;
-    border-radius: 30px;
-    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
-    transition: all .2s ease-in-out;
-  }
-
-  .contact__project {
-      border-radius: 30px;
-      box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
-      transition: all .2s ease-in-out;
-    }
-
-    .contact__item:hover {
-      cursor: pointer;
-      transform: scale(1.03);
-      
-    }
-
-    .contact__project {
-      line-height: 0;
-      margin: -6px;
-      margin-right: 18px;
-      align-self: center;
-      transition: all .2s ease-in-out;
-    }
-
-    .contact__project:hover {
-      cursor: pointer;
-      transform: scale(1.02);
-      
-    }
-
- .socials-container {
-   margin-left: -10%;
-   padding-left: 10%;
-   overflow-x: scroll;
-  }
-
-   .socials {
-    margin: 5px;
-    max-width: none;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 15px;
-  }
-
-  .download-button {
-    min-width: 160px;
+.navigation-list__item {
+  border: 2px solid #fff !important;
+  font-weight: 400;
   border-radius: 30px;
-  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
-    transition: all .2s ease-in-out;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
+  transition: .3s ease-in-out;
+  margin: -5px
+}
 
-  .download-button:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-    
-  }
+.navigation-list__item:hover {
+  border: 2px solid #306fdb !important;
+  background-color: #fff !important;
+  font-weight: 400;
+  border-radius: 30px;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, .4) !important
+}
 
+.navigation-list__item--active,
+.navigation-list__item--active:hover {
+  background-color: #306fdb !important;
+  border: 2px solid #306fdb !important;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 4px 10px;
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, .4) !important
+}
 
+.LatestProjects__picture,
+.contact__item,
+.contact__project,
+.download-button {
+  box-shadow: 0 0 8px -1px rgba(0, 0, 0, .4);
+  transition: .2s ease-in-out
+}
 
+.navigation-list {
+  list-style-type: none
+}
 
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px
+}
 
-.MyWork-container {
-    margin-left: -10%;
-    padding-left: 10%;
-    overflow-x: scroll;
-  }
+.button__form {
+  border: none;
+  font-family: inherit;
+  background-color: var(--black);
+  opacity: 60%;
+  color: var(--white);
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 30px;
+  border-bottom: 2px solid var(--black)
+}
 
+.homeAlign {
+  margin-top: 2%;
+  margin-left: 9%
+}
 
-  .MyWork {
-    margin: 10px;
-    text-decoration: none;
-    max-width: none;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-  }
+.profile__container {
+  position: relative;
+  float: left;
+  width: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  padding: 10px;
+  margin: 10px
+}
 
-  .MyWork__item {
-    margin: 10px;
-    text-decoration: none;
-    text-align: center;
-    
-  }
+.profile__portrait-circle {
+  width: 107%;
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center;
+  display: block;
+  margin: 0 .5rem;
+  animation: 5s infinite pulse
+}
+
+.profile__portrait-smallcircle,
+.profile__portrait-smallcircle-container {
+  display: inline-block;
+  animation: 5s infinite pulse;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  grid-area: overlap
+}
+
+.profile__portrait {
+  width: 100%;
+  border-radius: 50%;
+  grid-area: overlap;
+  align-self: center;
+  justify-self: center
+}
+
+.profile__portrait-smallcircle {
+  width: 30%;
+  margin: 0 .5rem
+}
+
+.profile__portrait-smallcircle-container {
+  border-radius: 30px;
+  background: rgba(0, 0, 0, .4);
+  backdrop-filter: blur(8px);
+  width: 30px;
+  height: 30px;
+  margin-right: 13px;
+  margin-bottom: 5px
+}
+
+.contactme,
+.gotoprojects {
+  backdrop-filter: blur(2px)
+}
+
+.circlecontainer {
+  width: 100%;
+  grid-area: overlap
+}
+
+.profile__portrait-bigrectangle {
+  width: 5%;
+  grid-area: overlap;
+  display: inline-block;
+  margin: 0 .5rem;
+  animation: 6s heartBeat;
+  position: absolute;
+  bottom: 10px;
+  right: 21.5px
+}
+
+.profile__portrait-mediumrectangle,
+.profile__portrait-smallrectangle {
+  width: 4%;
+  grid-area: overlap;
+  display: inline-block;
+  margin: 0 .5rem;
+  position: absolute
+}
+
+.profile__portrait-mediumrectangle {
+  animation: 5s heartBeat;
+  bottom: 12px;
+  right: 16px
+}
+
+.profile__portrait-smallrectangle {
+  animation: 4s heartBeat;
+  bottom: 15px;
+  right: 9.5px
+}
+
+.profile__portrait-bigrectangle:hover,
+.profile__portrait-mediumrectangle:hover,
+.profile__portrait-smallrectangle:hover {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 .5rem;
+  animation: 4s infinite heartBeat
+}
+
+.introtext {
+  display: block
+}
+
+.helloworld {
+  margin-top: 30px
+}
+
+.about-picture,
+.about-text {
+  display: block;
+  margin: 5%
+}
+
+.contact,
+.socials {
+  max-width: none;
+  display: flex;
+  flex-direction: row
+}
+
+.contact-container {
+  margin-top: 40px;
+  margin-left: -10%;
+  padding-left: 10%;
+  overflow-x: scroll
+}
+
+.contact {
+  margin: 5px;
+  max-height: fit-content
+}
+
+.contact__item {
+  line-height: 0;
+  margin: 5px;
+  align-self: center;
+  border-radius: 30px
+}
+
+.contact__project {
+  border-radius: 30px;
+  line-height: 0;
+  margin: -6px 18px -6px -6px;
+  align-self: center
+}
+
+.contact__item:hover {
+  cursor: pointer;
+  transform: scale(1.03)
+}
+
+.LatestProjects__item:hover,
+.LatestProjects__picture:hover,
+.contact__project:hover,
+.download-button:hover,
+.gotoprojects:hover {
+  cursor: pointer;
+  transform: scale(1.02)
+}
+
+.MyWork-container,
+.socials-container {
+  margin-left: -10%;
+  padding-left: 10%;
+  overflow-x: scroll
+}
+
+.socials {
+  margin: 5px;
+  padding-bottom: 15px
+}
+
+.LatestProjects,
+.MyWork {
+  max-width: none;
+  flex-direction: row;
+  text-decoration: none;
+  display: flex
+}
+
+.download-button {
+  min-width: 160px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px
+}
+
+.MyWork {
+  margin: auto
+}
+
+.MyWork__item,
+.Recommended__item,
+.workflow__item {
+  margin: 10px;
+  text-decoration: none;
+  text-align: center
+}
 
 .animate__animated .animate__backInLeft {
-  --animate-duration: 1s;
+  --animate-duration: 1s
 }
-  
+
 .latest-projects-container {
   margin-left: -10%;
   padding-left: 10%;
   overflow-x: scroll;
-  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation: heartBeat
 }
 
 .LatestProjects {
-  text-decoration: none;
-  max-width: none;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 50px;
-  padding-top: 25px;
+  padding-top: 25px
 }
 
 .latestprojectsheader {
   margin: 10px;
-  text-align: left;
-}
-
-.LatestProjects__item a {
-  text-decoration: none;
+  text-align: left
 }
 
 .LatestProjects__item {
   margin: 10px;
   text-decoration: none;
-  transition: all .2s ease-in-out;
-  
-}
-
-.LatestProjects__item:hover {
-  cursor: pointer;
-  transform: scale(1.02);
+  transition: .2s ease-in-out
 }
 
 .LatestProjects__picture {
   width: 262px;
   height: 169px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.4);
-  transition: all .2s ease-in-out;
-
-}
-
-.LatestProjects__picture:hover {
-  cursor: pointer;
-  transform: scale(1.02);
+  border-radius: 30px
 }
 
 .latestprojectstext {
   font-size: 14px;
   font-weight: 300;
-  text-decoration: none;
-  color: #7A7A7A;
+  color: #7a7a7a;
   text-decoration: none;
   margin: 10px;
-  max-width: 260px;
-  
+  max-width: 260px
 }
 
 .latestprojectsbutton {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: .8rem;
   text-align: center;
-  color: #306FDB;
+  color: #306fdb;
   background-color: transparent;
   border: none;
-  transition: all 0.1s ease-in-out;
+  transition: .1s ease-in-out;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 30px
 }
 
 .latestprojectsbutton:hover {
-  text-shadow: #000000;
-  border: solid 2px #306FDB;
+  text-shadow: #000;
+  border: 2px solid #306fdb;
   border-radius: 30px;
   color: #2487dd !important;
-  opacity: 1;
-
+  opacity: 1
 }
 
-.Recommended {
-  margin: 10px;
-  text-decoration: none;
-  max-width: none;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-}
-
-.Recommended__item {
-  margin: 10px;
-  text-decoration: none;
-  text-align: center;
-
-}
-
+.Recommended,
 .workflow {
-  margin: 10px;
+  margin: auto;
   text-decoration: none;
   max-width: none;
-  margin: auto;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  overflow-x: scroll
 }
-
-.workflow__item {
-  margin: 10px;
-  text-decoration: none;
-  text-align: center;
-
-}
-
 
 .CollectionHeader {
   margin-left: 30px;
   margin-bottom: -25px;
   font-size: 19px;
-  font-weight: 500;
-
+  font-weight: 500
 }
 
 .CollectionMyWork {
   margin-left: 30px;
-  
   font-size: 30px;
-  font-weight: 500;
-
+  font-weight: 500
 }
 
 .collection__item {
   max-width: 270px;
-  margin: 10px;
- }
+  margin: 10px
+}
 
 .collection__itemtext {
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none
 }
 
-
-
- 
-
 .collection {
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
 }
 
 .collection_projectpage {
@@ -658,13 +474,11 @@ code {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
-
-
 .collection__photo {
-  max-width: 100%;
+  max-width: 100%
 }
 
 .gotoprojects {
@@ -672,78 +486,68 @@ code {
   top: 20px;
   left: 20px;
   border-radius: 30px;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, .3);
   padding: 6px 13px;
-  transition: all .2s ease-in-out;
+  transition: .2s ease-in-out
+}
+
+.about_text_container_effect,
+.project_text_container_effect {
+  padding: 5px 30px;
+  box-shadow: 0 0 18px -10px rgba(0, 0, 0, .4);
+  transition: .2s ease-in-out
 }
 
 .gotoprojects:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  background: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  
+  background: rgba(0, 0, 0, .3);
+  border: 2px solid rgba(255, 255, 255, .3)
 }
-
 
 .project__photo {
   max-height: 500px;
   width: 100%;
-  object-fit: cover;
+  object-fit: cover
 }
 
 .projectcontent {
   max-width: 900px;
-  margin-top: -30px;
-
+  margin-top: -30px
 }
 
 .project_text_container_effect {
-  padding: 5px 30px;
   border-radius: 30px;
-  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 0.4);
-  transition: all .2s ease-in-out;
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
 
 .about_text_container_effect {
   max-width: 1000px;
   width: 95%;
-  padding: 5px 30px;
   border-radius: 30px;
-  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 0.4);
-  transition: all .2s ease-in-out;
-  margin: 0 auto;
+  margin: 0 auto
 }
-
 
 @keyframes FadeIn {
   0% {
-    opacity: 0;
-    
+    opacity: 0
   }
 
   100% {
-    opacity: 1;
-   
+    opacity: 1
   }
 }
 
 .animated-image {
   animation-name: FadeIn;
-  animation-duration: 2s;
+  animation-duration: 2s
 }
-
 
 .project__item {
   margin: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
-
 
 .contactme {
   position: fixed;
@@ -752,234 +556,216 @@ code {
   width: 168px;
   height: 70px;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, .4)
 }
 
 .contactmeheader {
   position: absolute;
   margin-left: 20px;
   top: 13%;
-  font-family: 'Roboto';
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, .7)
 }
 
 .email {
-position: absolute;
+  position: absolute;
   left: 70%;
-  top: 32%;
-
+  top: 32%
 }
-  .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  
 
-  .profile {
-    max-width: none;
-    margin: 0 auto; 
-     
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-.center {
+.center,
+.page-footer {
   clear: both;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: center
 }
 
-  .page-header {
-    display: flex;
-    width: 95%;
-    padding-top: 20px;
-    margin: 0 auto;
-  }
+.profile {
+  max-width: none;
+  margin: 0 auto
+}
 
-  .page-header__item {
-   
-  }
+* {
+  box-sizing: border-box
+}
 
-  .page-header__item:last-child {
-    flex-grow: 1;
-    text-align:right;
-  }
+.page-header {
+  display: flex;
+  width: 95%;
+  padding-top: 20px;
+  margin: 0 auto
+}
 
-  .logo{
-    position: relative;
-    width: 40px;
-    margin-top: 5px;
-   
-  }
-/* start grid fallback */
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right
+}
+
+.logo {
+  position: relative;
+  width: 40px;
+  margin-top: 5px
+}
+
 .grid__item {
   display: inline-block;
-  width: 33%;
- }
- /* end grid fallback */
- 
- @supports (backdrop-filter: none) {
-   .contactme {
-     background: rgba(0, 0, 0, 0.6);
-     backdrop-filter: blur(8px);
-   }
- }
+  width: 33%
+}
 
- @supports (display: grid) {
+@supports (backdrop-filter:none) {
+  .contactme {
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(8px)
+  }
+}
+
+@supports (display:grid) {
   .grid {
     display: grid;
-    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 0;
- 
+    margin: 0
   }
+
   .grid__item {
     background-color: var(--gray);
     width: auto;
     height: auto;
     margin: 0;
-    display: subgrid;
+    display: subgrid
   }
-  
- 
+
   .griditemphoto {
     width: 100%
   }
 
- .button, button {
-  display: inline-block;
-  padding: 10px;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-}
-
-.button:hover,
-.button:focus,
-.button:hover,
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.4;
-}
-
-.animate__animated {
-
-  display: inline-block;
-  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 4s; /* don't forget to set a duration! */
-}
-
-@keyframes color-change {
-  0% {
-    fill: var(--color-sun-one);
-  }
-  50% {
-    fill: var(--color-sun-two);
-  }
-  100% {
-    fill: var(--color-sun-three);
-  }
-}
-
-.sun {
-  animation-duration: 6s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(500px, 50px);
-  }
-}
-
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 40s cloud-move-reverse infinite alternate linear;
-}
-
-
-
-@media only screen and (max-width: 700px) {
-  .about-picture {
-    display: flex;
-    justify-content: center;
+  .button,
+  button {
+    display: inline-block;
+    padding: 10px;
+    transition-duration: .2s;
+    transition-property: opacity
   }
 
-  .about-text {
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: -50px;
-  
+  .button:focus,
+  .button:hover {
+    cursor: pointer;
+    opacity: .4
   }
-}
 
-@media only screen and (max-width: 434px) {
-  .introtext {
-    margin-top: 60px;
-    margin-left: 10px;
+  .animate__animated {
+    display: inline-block;
+    animation: 4s fadeInRight
   }
-  .helloworld{
-    margin-top: 75px;
-  }
-}
 
-/*has to be at the end of the file*/
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+  .cloud-front,
+  .sun {
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear
   }
-}
-@media all and (min-width: 500px) and (max-width: 750px){
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
+
+  @keyframes color-change {
+    0% {
+      fill: var(--color-sun-one)
+    }
+
+    50% {
+      fill: var(--color-sun-two)
+    }
+
+    100% {
+      fill: var(--color-sun-three)
+    }
   }
-}
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+
+  .sun {
+    animation-duration: 6s;
+    animation-name: color-change
   }
-} 
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px)
+    }
+
+    to {
+      transform: translate(500px, 50px)
+    }
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px)
+    }
+
+    to {
+      transform: translate(100px, 48px)
+    }
+  }
+
+  .cloud-back {
+    animation: 40s linear infinite alternate cloud-move-reverse
+  }
+
+  @media only screen and (max-width:700px) {
+    .about-picture {
+      display: flex;
+      justify-content: center
+    }
+
+    .about-text {
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-top: -50px
+    }
+  }
+
+  @media only screen and (max-width:434px) {
+    .introtext {
+      margin-top: 60px;
+      margin-left: 10px
+    }
+
+    .helloworld {
+      margin-top: 75px
+    }
+  }
+
+  @media all and (max-width:500px) {
+    .grid {
+      grid-template-columns: 1fr 1fr
+    }
+  }
+
+  @media all and (min-width:500px) and (max-width:750px) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr
+    }
+  }
+
+  @media all and (max-width:750px) {
+    .grid {
+      grid-gap: 10px
+    }
+  }
+
   .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
+    grid-column: auto/auto;
+    grid-row: auto/auto
   }
+
   h1 {
-    font-size: 22px;
+    font-size: 22px
   }
 }
